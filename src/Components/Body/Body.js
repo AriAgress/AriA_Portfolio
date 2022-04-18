@@ -1,6 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// components
+import Projects from './Projects/Projects';
+
 const BodyWrapper = styled.div`
   height: 60vh;
 
@@ -19,22 +22,26 @@ const BodyContainer = styled.div`
   justify-content: space-between;
 
   margin-top: 10vh;
+  margin-bottom: 10vh;
 `;
+
 const ImgContainer = styled.div`
-  width: 40%;
-  background-image: url(https://picsum.photos/200/300);
+  width: 45%;
+  background-image: url(https://picsum.photos/600/800);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 `;
+
 const TextContainer = styled.div`
-  width: 60%;
+  width: 55%;
 
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
 `;
+
 const DescriptionBox = styled.div``;
 
 const Body = () => {
@@ -49,6 +56,7 @@ const Body = () => {
           </DescriptionBox>
         </TextContainer>
       </BodyContainer>
+      <Projects />
     </BodyWrapper>
   );
 };
