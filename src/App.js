@@ -1,11 +1,11 @@
 import './App.css';
 import { Routes, Route, Link } from 'react-router-dom';
+import projects from './Utils/ProjectObjects';
 
 // Components
 import Nav from './Components/Nav/Nav';
-import Body from './Components/Body/Body';
 
-function App() {
+function App({ projects }) {
   return (
     <div className='App'>
       <Nav />
