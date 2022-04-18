@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const NavContainer = styled.div`
+const NavWrapper = styled.div`
   height: 10vh;
 
   color: white;
@@ -11,7 +11,7 @@ const NavContainer = styled.div`
   justify-content: center;
 `;
 
-const NavBody = styled.div`
+const NavContainer = styled.div`
   width: 100%;
   max-width: 960px;
 
@@ -37,16 +37,16 @@ const Links = styled.div`
 
 const Nav = () => {
   return (
-    <NavContainer>
-      <NavBody>
+    <NavWrapper>
+      <NavContainer>
         <LogoContainer>Logo</LogoContainer>
         <NavLinksContainer>
           <Links>Menu</Links>
           <Links>About</Links>
           <button>Button</button>
         </NavLinksContainer>
-      </NavBody>
-    </NavContainer>
+      </NavContainer>
+    </NavWrapper>
   );
 };
 
