@@ -2,7 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 // components
-import Projects from '../Projects/Projects';
+import QuoteBox from './QuoteBox/QuoteBox';
+
+// images
+import AriAvatar from '../../Assets/AriAvatar.png';
 
 const BodyWrapper = styled.div`
   height: 60vh;
@@ -27,7 +30,7 @@ const BodyContainer = styled.div`
 
 const ImgContainer = styled.div`
   width: 45%;
-  background-image: url(https://picsum.photos/600/800);
+  background-image: url(${AriAvatar});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -41,8 +44,6 @@ const TextContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
 `;
-
-const QuoteBox = styled.div``;
 
 const DescriptionBox = styled.div`
   height: 100%;
@@ -58,7 +59,7 @@ const Body = () => {
       <BodyContainer>
         <ImgContainer />
         <TextContainer>
-          <QuoteBox>HOW IT GOIN?</QuoteBox>
+          <QuoteBox />
           <DescriptionBox>
             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
             <div>
