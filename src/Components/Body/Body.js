@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // components
-import Projects from './Projects/Projects';
+import Projects from '../Projects/Projects';
 
 const BodyWrapper = styled.div`
   height: 60vh;
@@ -42,7 +42,15 @@ const TextContainer = styled.div`
   align-items: center;
 `;
 
-const DescriptionBox = styled.div``;
+const QuoteBox = styled.div``;
+
+const DescriptionBox = styled.div`
+  height: 100%;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+`;
 
 const Body = () => {
   return (
@@ -50,13 +58,15 @@ const Body = () => {
       <BodyContainer>
         <ImgContainer />
         <TextContainer>
-          HOW IT GOIN?
+          <QuoteBox>HOW IT GOIN?</QuoteBox>
           <DescriptionBox>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div>
+              Lets chat at <b>ariagress@gmail.com</b>
+            </div>
           </DescriptionBox>
         </TextContainer>
       </BodyContainer>
-      <Projects />
     </BodyWrapper>
   );
 };
