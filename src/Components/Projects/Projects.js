@@ -1,25 +1,25 @@
 import React from 'react';
-import { projects } from '../../Utils/ProjectObjects';
+import { projects, even } from '../../Utils/ProjectObjects';
 import styled from 'styled-components';
 
 const ProjectsWrapper = styled.div`
-  /* min-height: 100vh;
-  width: 100%; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-`;
-const ProjectsContainer = styled.div`
-  width: 90%;
-  max-width: 1000px;
-  margin: 50px auto;
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 100px;
-  /* background-color: aqua; */
 `;
-const Left = styled.div`
+const ProjectsContainer = styled.div`
+  width: 100%;
+  max-width: 960px;
+
+  display: flex;
+  /* flex-flow: row; */
+  flex-flow: ${props => (props.even ? 'row-reverse' : 'row')};
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+`;
+const ProjectImg = styled.div`
   width: 50%;
   height: 300px;
   padding: 30px;
@@ -27,7 +27,7 @@ const Left = styled.div`
   border-radius: 8px;
   z-index: 1;
 `;
-const Right = styled.div`
+const ProjectDescription = styled.div`
   width: 50%;
   min-height: 300px;
   background-color: #303137;
@@ -38,6 +38,7 @@ const Right = styled.div`
   border-radius: 8px;
   color: white;
   margin-left: -60px;
+  /* margin-right: -60px; */
   margin-bottom: 100px;
 `;
 const Content = styled.div`
@@ -47,21 +48,26 @@ const Content = styled.div`
 `;
 
 const Projects = () => {
+  // const even = ({ projects.projectID }) => {
+  //   if (projects.projectID % 2 === 0) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // };
+
   return (
     <ProjectsWrapper>
       {projects.map((p, i) => (
-        <ProjectsContainer key={i}>
-          <Left></Left>
-          <Right>
+        <ProjectsContainer key={i} even={even}>
+          <ProjectImg></ProjectImg>
+          <ProjectDescription>
             <Content>
               <h1>{p.projectTitle}</h1>
               <p>{p.projectTitle}</p>
               <p>{p.language}</p>
-              <a href='#' class='btn'>
-                Click Me
-              </a>
             </Content>
-          </Right>
+          </ProjectDescription>
         </ProjectsContainer>
       ))}
     </ProjectsWrapper>
