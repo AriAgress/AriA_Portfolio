@@ -9,6 +9,17 @@ const ProjectsWrapper = styled.div`
   justify-content: center;
 `;
 
+const IntroText = styled.div`
+  width: 100%;
+  max-width: 960px;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-content: flex-start;
+
+  margin-bottom: 25px;
+`;
+
 const ProjectsContainer = styled.div`
   width: 100%;
   max-width: 960px;
@@ -58,6 +69,7 @@ const Content = styled.div`
 const Projects = () => {
   return (
     <ProjectsWrapper>
+      <IntroText>WEB APPLICATIONS</IntroText>
       {projects.map((p, i) => (
         <ProjectsContainer key={i} even={p.projectID % 2 === 0 ? true : false}>
           <ProjectImg></ProjectImg>

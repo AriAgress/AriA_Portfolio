@@ -7,6 +7,9 @@ import QuoteBox from './QuoteBox/QuoteBox';
 // images
 import AriAvatar from '../../Assets/AriAvatar.png';
 
+// icons
+import { AiOutlineDown } from 'react-icons/ai';
+
 const BodyWrapper = styled.div`
   height: 60vh;
 
@@ -21,11 +24,19 @@ const BodyContainer = styled.div`
   max-width: 960px;
 
   display: flex;
-  flex-flow: row;
-  justify-content: space-between;
+  flex-flow: column;
+  align-items: center;
 
   margin-top: 100px;
   margin-bottom: 100px;
+`;
+
+const IntroContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 `;
 
 const ImgContainer = styled.div`
@@ -62,26 +73,40 @@ const DescriptionBox = styled.div`
   margin-left: 30px;
 `;
 
+const ProjectButton = styled.div`
+  color: white;
+  font-size: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const Body = () => {
   return (
     <BodyWrapper>
       <BodyContainer>
-        <ImgContainer>
-          <Img></Img>
-        </ImgContainer>
-        <TextContainer>
-          <QuoteBox />
-          <DescriptionBox>
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit.
-            </div>
-            <div>
-              Lets chat at <b>ariagress@gmail.com</b>
-            </div>
-          </DescriptionBox>
-        </TextContainer>
+        <IntroContainer>
+          <ImgContainer>
+            <Img></Img>
+          </ImgContainer>
+          <TextContainer>
+            <QuoteBox />
+            <DescriptionBox>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <div>
+                Lets chat at <b>ariagress@gmail.com</b>
+              </div>
+            </DescriptionBox>
+          </TextContainer>
+        </IntroContainer>
+        <ProjectButton>
+          <AiOutlineDown />
+        </ProjectButton>
       </BodyContainer>
     </BodyWrapper>
   );
