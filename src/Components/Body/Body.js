@@ -29,7 +29,6 @@ const BodyContainer = styled.div`
   align-items: center;
 
   margin-top: 100px;
-  margin-bottom: 100px;
 `;
 
 const IntroContainer = styled.div`
@@ -83,6 +82,13 @@ const ProjectButton = styled.div`
   align-items: center;
 `;
 
+const Anchor = styled.a`
+  &:visited {
+    text-decoration: none;
+    color: white;
+  }
+`;
+
 const Body = () => {
   return (
     <div>
@@ -107,7 +113,9 @@ const Body = () => {
             </TextContainer>
           </IntroContainer>
           <ProjectButton>
-            <AiOutlineDown />
+            <Anchor href='#Projecto'>
+              <AiOutlineDown />
+            </Anchor>
           </ProjectButton>
         </BodyContainer>
       </BodyWrapper>

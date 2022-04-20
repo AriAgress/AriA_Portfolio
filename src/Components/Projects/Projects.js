@@ -7,6 +7,9 @@ const ProjectsWrapper = styled.div`
   flex-flow: column;
   align-items: center;
   justify-content: center;
+
+  padding-top: 100px;
+  scroll-behavior: smooth;
 `;
 
 const IntroText = styled.div`
@@ -68,7 +71,7 @@ const Content = styled.div`
 
 const Projects = () => {
   return (
-    <ProjectsWrapper>
+    <ProjectsWrapper id='Projecto'>
       <IntroText>WEB APPLICATIONS</IntroText>
       {projects.map((p, i) => (
         <ProjectsContainer key={i} even={p.projectID % 2 === 0 ? true : false}>
