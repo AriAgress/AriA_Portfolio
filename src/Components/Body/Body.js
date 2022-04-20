@@ -24,12 +24,12 @@ const BodyContainer = styled.div`
   flex-flow: row;
   justify-content: space-between;
 
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
 `;
 
 const ImgContainer = styled.div`
-  width: 45%;
+  width: 50%;
 `;
 
 const Img = styled.div`
@@ -42,7 +42,7 @@ const Img = styled.div`
 `;
 
 const TextContainer = styled.div`
-  width: 55%;
+  width: 50%;
 
   display: flex;
   flex-flow: column;
