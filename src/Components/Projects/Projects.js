@@ -1,5 +1,5 @@
 import React from 'react';
-import { projects, even } from '../../Utils/ProjectObjects';
+import { projects } from '../../Utils/ProjectObjects';
 import styled from 'styled-components';
 
 const ProjectsWrapper = styled.div`
@@ -8,6 +8,7 @@ const ProjectsWrapper = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 const ProjectsContainer = styled.div`
   width: 100%;
   max-width: 960px;
@@ -17,16 +18,18 @@ const ProjectsContainer = styled.div`
   flex-flow: ${props => (props.even ? 'row-reverse' : 'row')};
   align-items: center;
   justify-content: center;
-  margin-bottom: 10vh;
+  margin-bottom: 100px;
 `;
+
 const ProjectImg = styled.div`
   width: 50%;
   height: 300px;
   padding: 30px;
   background: orange;
-  border-radius: 8px;
+  border-radius: 25px;
   z-index: 1;
 `;
+
 const ProjectDescription = styled.div`
   width: 50%;
   min-height: 300px;
@@ -35,33 +38,30 @@ const ProjectDescription = styled.div`
   align-items: center;
   justify-content: center;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 25px;
   color: white;
-  margin-left: -60px;
+  /* margin-left: -60px; */
   /* margin-right: -60px; */
+  margin-left: ${props => (props.even ? '0px' : '-60px')};
+  margin-right: ${props => (props.even ? '-60px' : '0px')};
   margin-bottom: 100px;
 `;
+
 const Content = styled.div`
   width: 100%;
   height: 100%;
-  margin-left: 80px;
+  /* margin-left: 80px; */
+  margin-left: ${props => (props.even ? '0px' : '80px')};
+  margin-right: ${props => (props.even ? '80px' : '0px')};
 `;
 
 const Projects = () => {
-  // const even = ({ projects.projectID }) => {
-  //   if (projects.projectID % 2 === 0) {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // };
-
   return (
     <ProjectsWrapper>
       {projects.map((p, i) => (
-        <ProjectsContainer key={i} even={even}>
+        <ProjectsContainer key={i} even={p.projectID % 2 === 0 ? true : false}>
           <ProjectImg></ProjectImg>
-          <ProjectDescription>
+          <ProjectDescription even={p.projectID % 2 === 0 ? true : false}>
             <Content>
               <h1>{p.projectTitle}</h1>
               <p>{p.projectTitle}</p>

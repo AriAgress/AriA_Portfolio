@@ -5,7 +5,7 @@ const DialogBox = styled.div`
   height: 80%;
   width: 100%;
   background-color: #064663;
-  border-radius: 30px;
+  border-radius: 25px;
 
   display: flex;
   justify-content: center;
