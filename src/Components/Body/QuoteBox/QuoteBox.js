@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const DialogBox = styled.div`
   height: 80%;
-  width: 80%;
+  width: 100%;
   background-color: #064663;
-  border-radius: 10%;
+  border-radius: 30px;
 
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@ const DialogBox = styled.div`
 // `;
 
 const TextBox = styled.div`
-  padding: 15px;
+  padding: 30px;
   font-size: 45px;
 `;
 
