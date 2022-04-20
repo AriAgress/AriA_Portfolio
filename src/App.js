@@ -4,19 +4,17 @@ import { Routes, Route, Link } from 'react-router-dom';
 // Components
 import Nav from './Components/Nav/Nav';
 import Body from './Components/Body/Body';
-import Projects from './Components/Projects/Projects';
+import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <div className='App'>
       <Nav />
-      <Body />
-      <Projects />
-      {/* <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-      </Routes> */}
+      <Routes>
+        <Route path='/' element={<Body />} />
+        <Route path='/About' element={<About />} />
+      </Routes>
       <Footer />
     </div>
   );

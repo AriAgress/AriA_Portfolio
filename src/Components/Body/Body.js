@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // components
+import Projects from '../Projects/Projects';
 import QuoteBox from './QuoteBox/QuoteBox';
 
 // images
@@ -40,20 +41,20 @@ const IntroContainer = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  width: 50%;
+  width: 40%;
 `;
 
 const Img = styled.div`
   height: 100%;
   width: 100%;
   background-image: url(${AriAvatar});
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 `;
 
 const TextContainer = styled.div`
-  width: 50%;
+  width: 60%;
 
   display: flex;
   flex-flow: column;
@@ -75,7 +76,7 @@ const DescriptionBox = styled.div`
 
 const ProjectButton = styled.div`
   color: white;
-  font-size: 50px;
+  font-size: 45px;
 
   display: flex;
   justify-content: center;
@@ -84,31 +85,34 @@ const ProjectButton = styled.div`
 
 const Body = () => {
   return (
-    <BodyWrapper>
-      <BodyContainer>
-        <IntroContainer>
-          <ImgContainer>
-            <Img></Img>
-          </ImgContainer>
-          <TextContainer>
-            <QuoteBox />
-            <DescriptionBox>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit.
-              </div>
-              <div>
-                Lets chat at <b>ariagress@gmail.com</b>
-              </div>
-            </DescriptionBox>
-          </TextContainer>
-        </IntroContainer>
-        <ProjectButton>
-          <AiOutlineDown />
-        </ProjectButton>
-      </BodyContainer>
-    </BodyWrapper>
+    <div>
+      <BodyWrapper>
+        <BodyContainer>
+          <IntroContainer>
+            <ImgContainer>
+              <Img></Img>
+            </ImgContainer>
+            <TextContainer>
+              <QuoteBox />
+              <DescriptionBox>
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <div>
+                  Lets chat at <b>ariagress@gmail.com</b>
+                </div>
+              </DescriptionBox>
+            </TextContainer>
+          </IntroContainer>
+          <ProjectButton>
+            <AiOutlineDown />
+          </ProjectButton>
+        </BodyContainer>
+      </BodyWrapper>
+      <Projects />
+    </div>
   );
 };
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
+
 const NavWrapper = styled.div`
   height: 10vh;
 
@@ -41,8 +43,8 @@ const Nav = () => {
       <NavContainer>
         <LogoContainer>Logo</LogoContainer>
         <NavLinksContainer>
-          <Links>Menu</Links>
-          <Links>About</Links>
+          <Link to='/'>Home</Link>
+          <Link to='/About'>About</Link>
           <button>Button</button>
         </NavLinksContainer>
       </NavContainer>
