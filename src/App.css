@@ -1,6 +1,7 @@
 * {
   padding: none;
   margin: none;
+  scroll-behavior: smooth;
 }
 
 .App {
