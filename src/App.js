@@ -5,6 +5,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Nav from './Components/Nav/Nav';
 import Body from './Components/Body/Body';
 import Projects from './Components/Projects/Projects';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
       {/* <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-      </Routes>
-      <Footer /> */}
+      </Routes> */}
+      <Footer />
     </div>
   );
 }
