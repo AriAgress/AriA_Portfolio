@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const NavWrapper = styled.div`
-  height: 10vh;
+  height: 125px;
 
   color: white;
   border-bottom: 5px solid #ecb365;
@@ -33,8 +33,17 @@ const NavLinksContainer = styled.div`
 `;
 
 const Links = styled.div`
-  padding-left: 0.5vh;
-  padding-right: 0.5vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  text-decoration: none;
+
+  &:visited {
+    color: white;
+  }
+  &:hover {
+    color: #ecb365;
+  }
 `;
 
 const Nav = () => {
@@ -43,8 +52,12 @@ const Nav = () => {
       <NavContainer>
         <LogoContainer>Logo</LogoContainer>
         <NavLinksContainer>
-          <Link to='/'>Home</Link>
-          <Link to='/About'>About</Link>
+          <Link to='/' style={{ textDecoration: 'none' }}>
+            <Links>Home</Links>
+          </Link>
+          <Link to='/About' style={{ textDecoration: 'none' }}>
+            <Links>About</Links>
+          </Link>
           <button>Button</button>
         </NavLinksContainer>
       </NavContainer>

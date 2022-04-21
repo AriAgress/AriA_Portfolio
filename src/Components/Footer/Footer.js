@@ -11,7 +11,7 @@ import {
 } from 'react-icons/ai';
 
 const FooterWrapper = styled.div`
-  height: 20vh;
+  height: 275px;
 
   color: white;
   border-top: 5px solid #ecb365;

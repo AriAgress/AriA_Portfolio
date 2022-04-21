@@ -12,7 +12,8 @@ import AriAvatar from '../../Assets/AriAvatar.png';
 import { AiOutlineDown } from 'react-icons/ai';
 
 const BodyWrapper = styled.div`
-  height: 60vh;
+  /* height: 60vh; */
+  height: 800px;
 
   color: white;
 
@@ -87,6 +88,9 @@ const Anchor = styled.a`
     text-decoration: none;
     color: white;
   }
+  &:hover {
+    color: #ecb365;
+  }
 `;
 
 const Body = () => {
@@ -113,7 +117,7 @@ const Body = () => {
             </TextContainer>
           </IntroContainer>
           <ProjectButton>
-            <Anchor href='#Projecto'>
+            <Anchor href='#ToProject'>
               <AiOutlineDown />
             </Anchor>
           </ProjectButton>
