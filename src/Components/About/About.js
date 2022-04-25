@@ -9,6 +9,7 @@ const AboutWrapper = styled.div`
   display: flex;
   justify-content: center;
 `;
+
 const AboutContainer = styled.div`
   width: 100%;
   max-width: 960px;
@@ -16,8 +17,8 @@ const AboutContainer = styled.div`
   display: flex;
   align-items: center;
 
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 `;
 const ImgContainer = styled.div`
   width: 50%;
@@ -29,8 +30,13 @@ const ImgContainer = styled.div`
 `;
 const AboutImg = styled.div``;
 const TextContainer = styled.div`
+  height: 400px;
   width: 50%;
   padding-left: 60px;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 `;
 
 const About = () => {
@@ -42,8 +48,22 @@ const About = () => {
         </ImgContainer>
         <TextContainer>
           <h1>About Me</h1>
-          <p>Hello</p>
-          <p>World</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit.
+          </p>
         </TextContainer>
       </AboutContainer>
     </AboutWrapper>
