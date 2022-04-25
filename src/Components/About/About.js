@@ -1,12 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// components
+import Hobby from './Hobby/Hobby';
+
 const AboutWrapper = styled.div`
-  height: 800px;
+  /* height: 800px; */
 
   color: white;
 
   display: flex;
+  flex-flow: column;
+  align-items: center;
   justify-content: center;
 `;
 
@@ -24,9 +29,9 @@ const ImgContainer = styled.div`
   width: 50%;
   height: 400px;
 
-  border: 1px solid red;
   box-shadow: -20px -20px lightblue;
   border-radius: 25px;
+  background-color: orange;
 `;
 const AboutImg = styled.div``;
 const TextContainer = styled.div`
@@ -66,6 +71,7 @@ const About = () => {
           </p>
         </TextContainer>
       </AboutContainer>
+      <Hobby />
     </AboutWrapper>
   );
 };

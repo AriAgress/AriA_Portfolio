@@ -34,13 +34,16 @@ const ProjectsContainer = styled.div`
   margin-bottom: 100px;
 `;
 
-const ProjectImg = styled.div`
+const ProjectImgContainer = styled.div`
   width: 50%;
-  height: 300px;
-  padding: 30px;
-  background: orange;
-  border-radius: 25px;
+  height: 350px;
   z-index: 1;
+`;
+
+const ProjectImg = styled.img`
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
 `;
 
 const ProjectDescription = styled.div`
@@ -74,11 +77,13 @@ const Projects = () => {
       <IntroText>WEB APPLICATIONS</IntroText>
       {projects.map((p, i) => (
         <ProjectsContainer key={i} even={p.projectID % 2 === 0 ? true : false}>
-          <ProjectImg></ProjectImg>
+          <ProjectImgContainer>
+            <ProjectImg src={p.projectImage} alt={p.projectTitle} />
+          </ProjectImgContainer>
           <ProjectDescription even={p.projectID % 2 === 0 ? true : false}>
             <Content>
               <h1>{p.projectTitle}</h1>
-              <p>{p.projectTitle}</p>
+              <p>{p.description}</p>
               <p>{p.language}</p>
             </Content>
           </ProjectDescription>
