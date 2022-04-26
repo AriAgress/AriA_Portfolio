@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { setColor } from '../../Actions/Index';
 
 const NavWrapper = styled.div`
   height: 125px;
@@ -47,6 +49,9 @@ const Links = styled.div`
 `;
 
 const Nav = () => {
+  const colorSwitch = useSelector(state => state.colorSwitch);
+  const dispatch = useDispatch();
+
   return (
     <NavWrapper>
       <NavContainer>
@@ -58,7 +63,11 @@ const Nav = () => {
           <Link to='/About' style={{ textDecoration: 'none' }}>
             <Links>About</Links>
           </Link>
-          <button>Button</button>
+          <button
+            colorSwitch={colorSwitch}
+            onClick={() => dispatch(setColor(!colorSwitch))}>
+            Button
+          </button>
         </NavLinksContainer>
       </NavContainer>
     </NavWrapper>

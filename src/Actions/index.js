@@ -1,6 +1,6 @@
-export const darkMode = bool => {
+export const setColor = bool => {
   return {
-    type: 'DARK_MODE',
+    type: 'SET_COLOR',
     payload: bool,
   };
 };

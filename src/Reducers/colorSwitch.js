@@ -1,6 +1,6 @@
 const colorReducer = (state = null, action) => {
   switch (action.type) {
-    case 'DARK_MODE':
+    case 'SET_COLOR':
       return action.payload;
     default:
       return state;
