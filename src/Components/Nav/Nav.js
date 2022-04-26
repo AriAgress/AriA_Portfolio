@@ -8,7 +8,7 @@ import { setColor } from '../../Actions/Index';
 const NavWrapper = styled.div`
   height: 125px;
 
-  color: white;
+  /* color: white; */
   border-bottom: 5px solid #ecb365;
 
   display: flex;
@@ -37,11 +37,11 @@ const NavLinksContainer = styled.div`
 const Links = styled.div`
   padding-left: 10px;
   padding-right: 10px;
-  color: white;
+  color: black;
   text-decoration: none;
 
   &:visited {
-    color: white;
+    color: black;
   }
   &:hover {
     color: #ecb365;

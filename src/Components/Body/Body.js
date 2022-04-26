@@ -15,7 +15,7 @@ const BodyWrapper = styled.div`
   /* height: 60vh; */
   height: 800px;
 
-  color: white;
+  /* color: white; */
 
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ const DescriptionBox = styled.div`
 `;
 
 const ProjectButton = styled.div`
-  color: white;
+  /* color: white; */
   font-size: 45px;
 
   display: flex;
@@ -86,7 +86,7 @@ const ProjectButton = styled.div`
 const Anchor = styled.a`
   &:visited {
     text-decoration: none;
-    color: white;
+    color: black;
   }
   &:hover {
     color: #ecb365;

@@ -13,7 +13,7 @@ import {
 const FooterWrapper = styled.div`
   height: 275px;
 
-  color: white;
+  /* color: white; */
   border-top: 5px solid #ecb365;
 
   display: flex;

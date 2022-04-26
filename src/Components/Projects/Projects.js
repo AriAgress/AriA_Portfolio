@@ -14,7 +14,7 @@ const ProjectsWrapper = styled.div`
 const IntroText = styled.div`
   width: 100%;
   max-width: 960px;
-  color: white;
+  /* color: white; */
   font-size: 30px;
   display: flex;
   align-content: flex-start;
@@ -49,13 +49,14 @@ const ProjectImg = styled.img`
 const ProjectDescription = styled.div`
   width: 50%;
   min-height: 300px;
-  background-color: #303137;
+  /* background-color: #303137; */
+  background-color: ${props => (props.color ? props.color : 'white')};
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   border-radius: 25px;
-  color: white;
+  /* color: white; */
   /* margin-left: -60px; */
   /* margin-right: -60px; */
   margin-left: ${props => (props.even ? '0px' : '-60px')};
@@ -80,7 +81,9 @@ const Projects = () => {
           <ProjectImgContainer>
             <ProjectImg src={p.projectImage} alt={p.projectTitle} />
           </ProjectImgContainer>
-          <ProjectDescription even={p.projectID % 2 === 0 ? true : false}>
+          <ProjectDescription
+            color={p.color}
+            even={p.projectID % 2 === 0 ? true : false}>
             <Content>
               <h1>{p.projectTitle}</h1>
               <p>{p.description}</p>
