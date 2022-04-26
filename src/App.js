@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route, Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 // Components
 import Nav from './Components/Nav/Nav';
@@ -8,8 +9,9 @@ import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 
 function App() {
+  const colorSwitch = useSelector(state => state.colorSwitch);
   return (
-    <div className='App'>
+    <div className='App' colorSwitch={colorSwitch}>
       <Nav />
       <Routes>
         <Route path='/' element={<Body />} />
