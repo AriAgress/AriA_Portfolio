@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useSelector } from 'react-redux';
 
 // components
 import Projects from '../Projects/Projects';
@@ -15,7 +16,7 @@ const BodyWrapper = styled.div`
   /* height: 60vh; */
   height: 800px;
 
-  /* color: white; */
+  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
 
   display: flex;
   justify-content: center;
@@ -75,7 +76,6 @@ const DescriptionBox = styled.div`
 `;
 
 const ProjectButton = styled.div`
-  /* color: white; */
   font-size: 45px;
 
   display: flex;
@@ -86,7 +86,7 @@ const ProjectButton = styled.div`
 const Anchor = styled.a`
   &:visited {
     text-decoration: none;
-    color: black;
+    color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
   }
   &:hover {
     color: #ecb365;
@@ -94,9 +94,11 @@ const Anchor = styled.a`
 `;
 
 const Body = () => {
+  const colorSwitch = useSelector(state => state.colorSwitch);
+
   return (
     <div>
-      <BodyWrapper>
+      <BodyWrapper colorSwitch={colorSwitch}>
         <BodyContainer>
           <IntroContainer>
             <ImgContainer>
@@ -117,7 +119,7 @@ const Body = () => {
             </TextContainer>
           </IntroContainer>
           <ProjectButton>
-            <Anchor href='#ToProject'>
+            <Anchor colorSwitch={colorSwitch} href='#ToProject'>
               <AiOutlineDown />
             </Anchor>
           </ProjectButton>

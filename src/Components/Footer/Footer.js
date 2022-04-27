@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useSelector } from 'react-redux';
 
 //Icons
 import { MdEmail } from 'react-icons/md';
@@ -13,7 +14,7 @@ import {
 const FooterWrapper = styled.div`
   height: 275px;
 
-  /* color: white; */
+  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
   border-top: 5px solid #ecb365;
 
   display: flex;
@@ -46,8 +47,9 @@ const CopyWright = styled.div`
 `;
 
 const Footer = () => {
+  const colorSwitch = useSelector(state => state.colorSwitch);
   return (
-    <FooterWrapper>
+    <FooterWrapper colorSwitch={colorSwitch}>
       <FooterContainer>
         <Text>LETS CONNECT</Text>
         <Icons>

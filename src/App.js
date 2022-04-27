@@ -9,8 +9,14 @@ import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 
 function App() {
+  const colorSwitch = useSelector(state => state.colorSwitch);
   return (
-    <div className='App'>
+    <div
+      className='App'
+      colorSwitch={colorSwitch}
+      style={{
+        backgroundColor: `${colorSwitch ? '#f1f1ee' : '#041c32'}`,
+      }}>
       <Nav />
       <Routes>
         <Route path='/' element={<Body />} />

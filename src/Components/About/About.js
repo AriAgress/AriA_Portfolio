@@ -7,7 +7,7 @@ import Hobby from './Hobby/Hobby';
 const AboutWrapper = styled.div`
   /* height: 800px; */
 
-  color: white;
+  /* color: white; */
 
   display: flex;
   flex-flow: column;

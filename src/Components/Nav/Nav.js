@@ -8,7 +8,7 @@ import { setColor } from '../../Actions/Index';
 const NavWrapper = styled.div`
   height: 125px;
 
-  /* color: white; */
+  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
   border-bottom: 5px solid #ecb365;
 
   display: flex;
@@ -37,11 +37,11 @@ const NavLinksContainer = styled.div`
 const Links = styled.div`
   padding-left: 10px;
   padding-right: 10px;
-  color: black;
+  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
   text-decoration: none;
 
   &:visited {
-    color: black;
+    color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
   }
   &:hover {
     color: #ecb365;
@@ -53,15 +53,15 @@ const Nav = () => {
   const dispatch = useDispatch();
 
   return (
-    <NavWrapper>
+    <NavWrapper colorSwitch={colorSwitch}>
       <NavContainer>
         <LogoContainer>Logo</LogoContainer>
         <NavLinksContainer>
           <Link to='/' style={{ textDecoration: 'none' }}>
-            <Links>Home</Links>
+            <Links colorSwitch={colorSwitch}>Home</Links>
           </Link>
           <Link to='/About' style={{ textDecoration: 'none' }}>
-            <Links>About</Links>
+            <Links colorSwitch={colorSwitch}>About</Links>
           </Link>
           <button
             colorSwitch={colorSwitch}
