@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useSelector } from 'react-redux';
 
 // components
 import Hobby from './Hobby/Hobby';
@@ -7,7 +8,7 @@ import Hobby from './Hobby/Hobby';
 const AboutWrapper = styled.div`
   /* height: 800px; */
 
-  /* color: white; */
+  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
 
   display: flex;
   flex-flow: column;
@@ -45,8 +46,9 @@ const TextContainer = styled.div`
 `;
 
 const About = () => {
+  const colorSwitch = useSelector(state => state.colorSwitch);
   return (
-    <AboutWrapper>
+    <AboutWrapper colorSwitch={colorSwitch}>
       <AboutContainer>
         <ImgContainer>
           <AboutImg />

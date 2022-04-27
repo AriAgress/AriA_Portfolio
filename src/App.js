@@ -16,6 +16,7 @@ function App() {
       colorSwitch={colorSwitch}
       style={{
         backgroundColor: `${colorSwitch ? '#f1f1ee' : '#041c32'}`,
+        transition: 'background-color 0.5s linear',
       }}>
       <Nav />
       <Routes>
