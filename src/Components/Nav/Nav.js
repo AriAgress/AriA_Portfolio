@@ -1,54 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 //components
 import ToggleSwitch from './ToggleSwitch/ToggleSwitch';
 
-const NavWrapper = styled.div`
-  height: 125px;
-
-  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
-  border-bottom: 5px solid #ecb365;
-
-  display: flex;
-  justify-content: center;
-`;
-
-const NavContainer = styled.div`
-  width: 100%;
-  max-width: 960px;
-
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-
-  margin-top: 6vh;
-  margin-bottom: 1vh;
-`;
-
-const LogoContainer = styled.div``;
-
-const NavLinksContainer = styled.div`
-  display: flex;
-  flex-flow: row;
-`;
-
-const Links = styled.div`
-  padding-left: 10px;
-  padding-right: 10px;
-  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
-  text-decoration: none;
-
-  &:visited {
-    color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
-  }
-  &:hover {
-    color: #ecb365;
-  }
-`;
+//stylesheet
+import {
+  NavWrapper,
+  NavContainer,
+  LogoContainer,
+  NavLinksContainer,
+  Links,
+} from './Nav.styles.js';
 
 const Nav = () => {
   const colorSwitch = useSelector(state => state.colorSwitch);
