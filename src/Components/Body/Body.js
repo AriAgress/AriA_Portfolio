@@ -108,7 +108,7 @@ const Body = () => {
               <QuoteBox />
               <DescriptionBox>
                 <div>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                   ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
                   dolor sit amet, consectetur adipiscing elit.
                 </div>
