@@ -5,7 +5,7 @@ const HobbyWrapper = styled.div`
   /* height: 800px; */
   width: 100%;
 
-  color: white;
+  /* color: white; */
 
   display: flex;
   justify-content: center;

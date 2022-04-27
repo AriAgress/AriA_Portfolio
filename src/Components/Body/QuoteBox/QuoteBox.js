@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const DialogBox = styled.div`
   height: 80%;
   width: 100%;
-  background-color: #064663;
+  background-color: #84b4ca;
   border-radius: 25px;
 
   display: flex;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { projects } from '../../Utils/ProjectObjects';
 import styled from 'styled-components';
+import { useSelector } from 'react-redux';
 
 const ProjectsWrapper = styled.div`
   display: flex;
@@ -14,7 +15,7 @@ const ProjectsWrapper = styled.div`
 const IntroText = styled.div`
   width: 100%;
   max-width: 960px;
-  /* color: white; */
+  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
   font-size: 30px;
   display: flex;
   align-content: flex-start;
@@ -73,9 +74,10 @@ const Content = styled.div`
 `;
 
 const Projects = () => {
+  const colorSwitch = useSelector(state => state.colorSwitch);
   return (
     <ProjectsWrapper id='ToProject'>
-      <IntroText>WEB APPLICATIONS</IntroText>
+      <IntroText colorSwitch={colorSwitch}>WEB APPLICATIONS</IntroText>
       {projects.map((p, i) => (
         <ProjectsContainer key={i} even={p.projectID % 2 === 0 ? true : false}>
           <ProjectImgContainer>
