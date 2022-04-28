@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import Projects from '../Projects/Projects';
 
 //components
 import ToggleSwitch from './ToggleSwitch/ToggleSwitch';
@@ -22,16 +23,18 @@ const Nav = () => {
   return (
     <NavWrapper colorSwitch={colorSwitch}>
       <NavContainer>
-        <LogoContainer>Logo</LogoContainer>
+        <Link to='/' style={{ textDecoration: 'none' }}>
+          <LogoContainer>Logo</LogoContainer>
+        </Link>
         <NavLinksContainer>
-          <Link to='/' style={{ textDecoration: 'none' }}>
-            <Links colorSwitch={colorSwitch} alt='HOME'>
-              <I colorSwitch={colorSwitch}>H</I>
+          <a href='#ToProject' style={{ textDecoration: 'none' }}>
+            <Links colorSwitch={colorSwitch} alt='WORK'>
+              <I colorSwitch={colorSwitch}>W</I>
               <I colorSwitch={colorSwitch}>O</I>
-              <I colorSwitch={colorSwitch}>M</I>
-              <I colorSwitch={colorSwitch}>E</I>
+              <I colorSwitch={colorSwitch}>R</I>
+              <I colorSwitch={colorSwitch}>K</I>
             </Links>
-          </Link>
+          </a>
           <Link to='/About' style={{ textDecoration: 'none' }}>
             <Links colorSwitch={colorSwitch} alt='ABOUT'>
               <I colorSwitch={colorSwitch}>A</I>

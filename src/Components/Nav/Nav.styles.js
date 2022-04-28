@@ -22,7 +22,11 @@ export const NavContainer = styled.div`
   margin-bottom: 1vh;
 `;
 
-export const LogoContainer = styled.div``;
+export const LogoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const NavLinksContainer = styled.div`
   display: flex;
