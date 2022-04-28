@@ -103,8 +103,17 @@ export const I = styled.i`
     &:nth-child(4) {
       transition-delay: calc(0.045s * 5);
     }
-    &:nth-child(4) {
+    &:nth-child(5) {
       transition-delay: calc(0.045s * 6);
+    }
+    &:nth-child(6) {
+      transition-delay: calc(0.045s * 7);
+    }
+    &:nth-child(7) {
+      transition-delay: calc(0.045s * 8);
+    }
+    &:nth-child(8) {
+      transition-delay: calc(0.045s * 9);
     }
   }
 `;

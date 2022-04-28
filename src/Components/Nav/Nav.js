@@ -27,15 +27,19 @@ const Nav = () => {
           <LogoContainer>Logo</LogoContainer>
         </Link>
         <NavLinksContainer>
-          <a href='#ToProject' style={{ textDecoration: 'none' }}>
-            <Links colorSwitch={colorSwitch} alt='WORK'>
-              <I colorSwitch={colorSwitch}>W</I>
-              <I colorSwitch={colorSwitch}>O</I>
+          <Link to='/#ToProject' style={{ textDecoration: 'none' }}>
+            <Links colorSwitch={colorSwitch} alt='PROJECTS'>
+              <I colorSwitch={colorSwitch}>P</I>
               <I colorSwitch={colorSwitch}>R</I>
-              <I colorSwitch={colorSwitch}>K</I>
+              <I colorSwitch={colorSwitch}>O</I>
+              <I colorSwitch={colorSwitch}>J</I>
+              <I colorSwitch={colorSwitch}>E</I>
+              <I colorSwitch={colorSwitch}>C</I>
+              <I colorSwitch={colorSwitch}>T</I>
+              <I colorSwitch={colorSwitch}>S</I>
             </Links>
-          </a>
-          <Link to='/About' style={{ textDecoration: 'none' }}>
+          </Link>
+          <Link to='/About'>
             <Links colorSwitch={colorSwitch} alt='ABOUT'>
               <I colorSwitch={colorSwitch}>A</I>
               <I colorSwitch={colorSwitch}>B</I>
