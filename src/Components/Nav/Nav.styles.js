@@ -22,23 +22,89 @@ export const NavContainer = styled.div`
   margin-bottom: 1vh;
 `;
 
-export const LogoContainer = styled.div``;
+export const LogoContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const NavLinksContainer = styled.div`
   display: flex;
   flex-flow: row;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Links = styled.div`
   padding-left: 10px;
   padding-right: 10px;
-  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  position: relative;
+  padding: 0 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 31ms cubic-bezier(0.5, 0.7, 0.4, 1);
 
-  &:visited {
+  &:before {
+    content: attr(alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    font-size: 15px;
+    font-weight: bold;
     color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+    letter-spacing: 4px;
+    opacity: 1;
   }
-  &:hover {
-    color: #ecb365;
+
+  &:active {
+    box-shadow: none;
+    transform: translateY(7px);
+    transition: 35ms cubic-bezier(0.5, 0.7, 0.4, 1);
+  }
+  &:hover:before {
+    transition: all 0s;
+    transform: translateY(100%);
+    opacity: 0;
+  }
+`;
+
+export const I = styled.i`
+  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-style: normal;
+  transition: all 2s ease;
+  transform: translateY(-20px);
+  opacity: 0;
+
+  ${Links}:hover & {
+    transition: all 0.2s ease;
+    transform: translateY(0px);
+    opacity: 1;
+    &:nth-child(1) {
+      transition-delay: 0.045s;
+    }
+    &:nth-child(2) {
+      transition-delay: calc(0.045s * 3);
+    }
+    &:nth-child(3) {
+      transition-delay: calc(0.045s * 4);
+    }
+    &:nth-child(4) {
+      transition-delay: calc(0.045s * 5);
+    }
+    &:nth-child(4) {
+      transition-delay: calc(0.045s * 6);
+    }
   }
 `;
