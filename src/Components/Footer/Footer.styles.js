@@ -30,7 +30,16 @@ export const Icons = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
+  color: black;
 `;
+
+export const A = styled.a`
+  &:visited {
+    color: black;
+    text-decoration: none;
+  }
+`;
+
 export const CopyWright = styled.div`
   font-size: 10px;
 `;
