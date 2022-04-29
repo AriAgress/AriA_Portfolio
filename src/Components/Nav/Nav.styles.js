@@ -20,6 +20,21 @@ export const NavContainer = styled.div`
 
   margin-top: 6vh;
   margin-bottom: 1vh;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    width: 95%;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 95%;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    width: 95%;
+  }
 `;
 
 export const LogoContainer = styled.div`

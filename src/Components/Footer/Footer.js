@@ -27,9 +27,7 @@ const Footer = () => {
       <FooterContainer>
         <Text>LETS CONNECT</Text>
         <Icons>
-          <A
-            href='mailto:ariagress@gmail.com'
-            style={{ textDecoration: 'none' }}>
+          <A href='mailto:ariagress@gmail.com' style={{ color: 'black' }}>
             <MdEmail />
           </A>
           <A href='https://www.linkedin.com/in/ariel-agress/'>

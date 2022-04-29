@@ -7,6 +7,21 @@ export const ProjectsWrapper = styled.div`
   justify-content: center;
 
   padding-top: 50px;
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+  }
 `;
 
 export const IntroText = styled.div`
@@ -15,6 +30,7 @@ export const IntroText = styled.div`
   color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
   font-size: 30px;
   display: flex;
+  flex-flow: row;
   align-content: flex-start;
 
   margin-bottom: 25px;
@@ -30,6 +46,19 @@ export const ProjectsContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* flex-flow: column; */
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+  }
 `;
 
 export const ProjectImgContainer = styled.div`
@@ -60,6 +89,21 @@ export const ProjectDescription = styled.div`
   margin-left: ${props => (props.even ? '0px' : '-60px')};
   margin-right: ${props => (props.even ? '-60px' : '0px')};
   margin-bottom: 100px;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* width: 50%;
+    margin-left: 0px;
+    margin-right: 0px; */
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+  }
 `;
 
 export const Content = styled.div`
