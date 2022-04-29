@@ -4,13 +4,24 @@ import styled from 'styled-components';
 import AriAvatar from '../../Assets/AriAvatar.png';
 
 export const BodyWrapper = styled.div`
-  /* height: 60vh; */
-  height: 800px;
+  height: 80vh;
+  max-height: 800px;
 
   color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
 
   display: flex;
   justify-content: center;
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+  }
 `;
 
 export const BodyContainer = styled.div`
@@ -22,6 +33,21 @@ export const BodyContainer = styled.div`
   align-items: center;
 
   margin-top: 100px;
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    width: 95%;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 95%;
+    margin-top: 50px;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    width: 95%;
+  }
 `;
 
 export const IntroContainer = styled.div`
@@ -30,10 +56,38 @@ export const IntroContainer = styled.div`
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    flex-flow: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+  }
 `;
 
 export const ImgContainer = styled.div`
   width: 40%;
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    height: 100%;
+    width: 100%;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+  }
 `;
 
 export const Img = styled.div`
@@ -54,6 +108,20 @@ export const TextContainer = styled.div`
   align-items: center;
 
   margin-left: 60px;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 90%;
+    margin-left: 0;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+  }
 `;
 
 export const DescriptionBox = styled.div`

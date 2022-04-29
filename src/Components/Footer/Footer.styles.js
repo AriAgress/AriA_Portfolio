@@ -19,6 +19,21 @@ export const FooterContainer = styled.div`
   justify-content: space-evenly;
 
   margin-bottom: 10px;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    width: 95%;
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 95%;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    width: 95%;
+  }
 `;
 export const Text = styled.div`
   font-size: 50px;
@@ -30,7 +45,6 @@ export const Icons = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  color: black;
 `;
 
 export const A = styled.a`
