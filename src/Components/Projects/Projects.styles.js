@@ -55,7 +55,8 @@ export const ProjectsContainer = styled.div`
   @media (min-width: 769px) and (max-width: 1024px) {
   }
   @media (min-width: 481px) and (max-width: 768px) {
-    /* flex-flow: column; */
+    flex-flow: column;
+    margin-bottom: 50px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
   }
@@ -65,12 +66,37 @@ export const ProjectImgContainer = styled.div`
   width: 50%;
   height: 350px;
   z-index: 1;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 75%;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+  }
 `;
 
 export const ProjectImg = styled.img`
   height: 100%;
   width: 100%;
   border-radius: 25px;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+  }
 `;
 
 export const ProjectDescription = styled.div`
@@ -98,9 +124,10 @@ export const ProjectDescription = styled.div`
   @media (min-width: 769px) and (max-width: 1024px) {
   }
   @media (min-width: 481px) and (max-width: 768px) {
-    /* width: 50%;
+    width: 75%;
     margin-left: 0px;
-    margin-right: 0px; */
+    margin-right: 0px;
+    padding: 0px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
   }
