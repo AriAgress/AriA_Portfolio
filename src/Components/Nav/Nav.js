@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
-import Projects from '../Projects/Projects';
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import Projects from "../Projects/Projects";
 
 //components
-import ToggleSwitch from './ToggleSwitch/ToggleSwitch';
+import ToggleSwitch from "./ToggleSwitch/ToggleSwitch";
 
 //stylesheet
 import {
@@ -15,7 +15,7 @@ import {
   NavLinksContainer,
   Links,
   I,
-} from './Nav.styles.js';
+} from "./Nav.styles.js";
 
 const Nav = () => {
   const colorSwitch = useSelector(state => state.colorSwitch);
@@ -23,12 +23,12 @@ const Nav = () => {
   return (
     <NavWrapper colorSwitch={colorSwitch}>
       <NavContainer>
-        <Link to='/' style={{ textDecoration: 'none' }}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           <LogoContainer>Logo</LogoContainer>
         </Link>
         <NavLinksContainer>
-          <Link to='/#ToProject' style={{ textDecoration: 'none' }}>
-            <Links colorSwitch={colorSwitch} alt='PROJECTS'>
+          <Link to="/#ToProject" style={{ textDecoration: "none" }}>
+            <Links colorSwitch={colorSwitch} alt="PROJECTS">
               <I colorSwitch={colorSwitch}>P</I>
               <I colorSwitch={colorSwitch}>R</I>
               <I colorSwitch={colorSwitch}>O</I>
@@ -39,8 +39,8 @@ const Nav = () => {
               <I colorSwitch={colorSwitch}>S</I>
             </Links>
           </Link>
-          <Link to='/About'>
-            <Links colorSwitch={colorSwitch} alt='ABOUT'>
+          <Link to="/About" style={{ textDecoration: "none" }}>
+            <Links colorSwitch={colorSwitch} alt="ABOUT">
               <I colorSwitch={colorSwitch}>A</I>
               <I colorSwitch={colorSwitch}>B</I>
               <I colorSwitch={colorSwitch}>O</I>

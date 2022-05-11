@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ProjectsWrapper = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ export const ProjectsWrapper = styled.div`
 export const IntroText = styled.div`
   width: 100%;
   max-width: 960px;
-  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
   font-size: 30px;
   display: flex;
   flex-flow: row;
@@ -42,7 +42,7 @@ export const ProjectsContainer = styled.div`
 
   display: flex;
   /* flex-flow: row; */
-  flex-flow: ${props => (props.even ? 'row-reverse' : 'row')};
+  flex-flow: ${props => (props.even ? "row-reverse" : "row")};
   align-items: center;
   justify-content: center;
   margin-bottom: 100px;
@@ -102,8 +102,8 @@ export const ProjectImg = styled.img`
 export const ProjectDescription = styled.div`
   width: 50%;
   min-height: 300px;
-  /* background-color: #303137; */
-  background-color: ${props => (props.color ? props.color : 'white')};
+  background-color: ${props =>
+    props.colorSwitch === true ? props.color : props.color2};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,8 +112,8 @@ export const ProjectDescription = styled.div`
   /* color: white; */
   /* margin-left: -60px; */
   /* margin-right: -60px; */
-  margin-left: ${props => (props.even ? '0px' : '-60px')};
-  margin-right: ${props => (props.even ? '-60px' : '0px')};
+  margin-left: ${props => (props.even ? "0px" : "-60px")};
+  margin-right: ${props => (props.even ? "-60px" : "0px")};
   margin-bottom: 100px;
 
   // media queries
@@ -137,6 +137,6 @@ export const Content = styled.div`
   width: 100%;
   height: 100%;
   /* margin-left: 80px; */
-  margin-left: ${props => (props.even ? '0px' : '80px')};
-  margin-right: ${props => (props.even ? '80px' : '0px')};
+  margin-left: ${props => (props.even ? "0px" : "80px")};
+  margin-right: ${props => (props.even ? "80px" : "0px")};
 `;

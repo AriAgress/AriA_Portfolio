@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
   height: 275px;
 
-  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
   border-top: 5px solid #ecb365;
 
   display: flex;
@@ -48,8 +48,9 @@ export const Icons = styled.div`
 `;
 
 export const A = styled.a`
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
   &:visited {
-    color: black;
+    color: ${props => (props.colorSwitch === true ? "black" : "white")};
     text-decoration: none;
   }
 `;

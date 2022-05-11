@@ -1,14 +1,14 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
 
 //Icons
-import { MdEmail, MdNoEncryption } from 'react-icons/md';
+import { MdEmail, MdNoEncryption } from "react-icons/md";
 import {
   AiFillLinkedin,
   AiFillGithub,
   AiOutlineCopyrightCircle,
   AiFillHeart,
-} from 'react-icons/ai';
+} from "react-icons/ai";
 
 // stylesheet
 import {
@@ -18,7 +18,7 @@ import {
   Icons,
   CopyWright,
   A,
-} from './Footer.styles.js';
+} from "./Footer.styles.js";
 
 const Footer = () => {
   const colorSwitch = useSelector(state => state.colorSwitch);
@@ -27,18 +27,20 @@ const Footer = () => {
       <FooterContainer>
         <Text>LETS CONNECT</Text>
         <Icons>
-          <A href='mailto:ariagress@gmail.com' style={{ color: 'black' }}>
+          <A href="mailto:ariagress@gmail.com" colorSwitch={colorSwitch}>
             <MdEmail />
           </A>
-          <A href='https://www.linkedin.com/in/ariel-agress/'>
+          <A
+            href="https://www.linkedin.com/in/ariel-agress/"
+            colorSwitch={colorSwitch}>
             <AiFillLinkedin />
           </A>
-          <A href='https://github.com/AriAgress'>
+          <A href="https://github.com/AriAgress" colorSwitch={colorSwitch}>
             <AiFillGithub />
           </A>
         </Icons>
         <CopyWright>
-          Copywright <AiOutlineCopyrightCircle /> 2022 Made with <AiFillHeart />{' '}
+          Copywright <AiOutlineCopyrightCircle /> 2022 Made with <AiFillHeart />{" "}
           by Ari Agress
         </CopyWright>
       </FooterContainer>

@@ -1,12 +1,12 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
 
 // components
-import Projects from '../Projects/Projects';
-import QuoteBox from './QuoteBox/QuoteBox';
+import Projects from "../Projects/Projects";
+import QuoteBox from "./QuoteBox/QuoteBox";
 
 // icons
-import { AiOutlineDown } from 'react-icons/ai';
+import { AiOutlineDown } from "react-icons/ai";
 
 // stylesheet
 import {
@@ -19,7 +19,7 @@ import {
   ProjectButton,
   Anchor,
   Img,
-} from './Body.styles.js';
+} from "./Body.styles.js";
 
 const Body = () => {
   const colorSwitch = useSelector(state => state.colorSwitch);
@@ -47,7 +47,7 @@ const Body = () => {
             </TextContainer>
           </IntroContainer>
           <ProjectButton>
-            <Anchor colorSwitch={colorSwitch} href='#ToProject'>
+            <Anchor colorSwitch={colorSwitch} href="#ToProject">
               <AiOutlineDown />
             </Anchor>
           </ProjectButton>
