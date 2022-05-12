@@ -1,8 +1,9 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
+import { FaHandPeace } from "react-icons/fa";
 
 // components
-import Hobby from './Hobby/Hobby';
+import Hobby from "./Hobby/Hobby";
 
 //stylesheet
 import {
@@ -11,7 +12,7 @@ import {
   ImgContainer,
   AboutImg,
   TextContainer,
-} from './About.styles.js';
+} from "./About.styles.js";
 
 const About = () => {
   const colorSwitch = useSelector(state => state.colorSwitch);
@@ -22,7 +23,9 @@ const About = () => {
           <AboutImg />
         </ImgContainer>
         <TextContainer>
-          <h1>About Me</h1>
+          <h1>
+            About Me <FaHandPeace />
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
             dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
