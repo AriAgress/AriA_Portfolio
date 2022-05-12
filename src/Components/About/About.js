@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { FaHandPeace } from "react-icons/fa";
+import { FaRegHandPeace } from "react-icons/fa";
 
 // components
 import Hobby from "./Hobby/Hobby";
@@ -19,12 +19,12 @@ const About = () => {
   return (
     <AboutWrapper colorSwitch={colorSwitch}>
       <AboutContainer>
-        <ImgContainer>
+        <ImgContainer colorSwitch={colorSwitch}>
           <AboutImg />
         </ImgContainer>
         <TextContainer>
           <h1>
-            About Me <FaHandPeace />
+            About Me <FaRegHandPeace style={{ color: "#F1AC52" }} />
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
