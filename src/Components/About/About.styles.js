@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
   /* height: 800px; */
 
-  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
 
   display: flex;
   flex-flow: column;
@@ -25,7 +25,9 @@ export const ImgContainer = styled.div`
   width: 50%;
   height: 400px;
 
-  box-shadow: -20px -20px lightblue;
+  /* box-shadow: -20px -20px #84b4ca; */
+  box-shadow: ${props =>
+    props.colorSwitch === true ? "-20px -20px #84b4ca" : "-20px -20px #064663"};
   border-radius: 25px;
   background-color: orange;
 `;
