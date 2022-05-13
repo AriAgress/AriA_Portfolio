@@ -25,7 +25,6 @@ export const ImgContainer = styled.div`
   width: 50%;
   height: 400px;
 
-  /* box-shadow: -20px -20px #84b4ca; */
   box-shadow: ${props =>
     props.colorSwitch === true ? "-20px -20px #84b4ca" : "-20px -20px #064663"};
   border-radius: 25px;
