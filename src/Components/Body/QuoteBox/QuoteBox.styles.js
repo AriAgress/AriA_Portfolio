@@ -62,7 +62,7 @@ export const DialogBox = styled.div`
     animation-iteration-count: infinite;
     content: ".";
     font-weight: bold;
-    -webkit-text-stroke: 0.5px green;
+    /* -webkit-text-stroke: 0.5px green; */
     -webkit-text-fill-color: ${props =>
       props.colorSwitch === true ? "#064663" : "#84b4ca"};
     /* border: 1px solid green; */
