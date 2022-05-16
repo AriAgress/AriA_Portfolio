@@ -102,6 +102,7 @@ export const ProjectImg = styled.img`
 export const ProjectDescription = styled.div`
   width: 50%;
   min-height: 300px;
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
   background-color: ${props =>
     props.colorSwitch === true ? props.color : props.color2};
   display: flex;
