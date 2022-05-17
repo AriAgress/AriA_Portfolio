@@ -4,7 +4,7 @@ import styled from "styled-components";
 import AriAvatar from "../../Assets/AriAvatar.png";
 
 export const BodyWrapper = styled.div`
-  height: 90vh;
+  height: 85vh;
   /* max-height: 800px; */
 
   color: ${props => (props.colorSwitch === true ? "black" : "white")};
@@ -125,11 +125,11 @@ export const TextContainer = styled.div`
 `;
 
 export const DescriptionBox = styled.div`
-  height: 100%;
+  height: 40%;
 
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 
   margin-left: 30px;
 `;
@@ -140,6 +140,10 @@ export const ProjectButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const DescriptionText = styled.div`
+  padding-bottom: 100px;
 `;
 
 export const Anchor = styled.a`
