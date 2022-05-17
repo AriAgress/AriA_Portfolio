@@ -47,8 +47,9 @@ export const DialogBox = styled.div`
   position: relative;
   box-shadow: 15px 15px
     ${props => (props.colorSwitch === true ? "#064663" : "#84b4ca")};
-  height: 80%;
+  height: 30%;
   width: 100%;
+  margin-right: 30px;
   /* font-family: "Baloo 2", cursive; */
   // border: 1px solid $color-green;
   display: flex;

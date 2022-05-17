@@ -1,13 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 // images
-import AriAvatar from '../../Assets/AriAvatar.png';
+import AriAvatar from "../../Assets/AriAvatar.png";
 
 export const BodyWrapper = styled.div`
-  height: 80vh;
-  max-height: 800px;
+  height: 90vh;
+  /* max-height: 800px; */
 
-  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
 
   display: flex;
   justify-content: center;
@@ -74,7 +74,7 @@ export const IntroContainer = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  width: 40%;
+  width: 50%;
   // media queries
   @media (min-width: 1201px) {
   }
@@ -100,7 +100,7 @@ export const Img = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  width: 60%;
+  width: 50%;
 
   display: flex;
   flex-flow: column;
@@ -145,7 +145,7 @@ export const ProjectButton = styled.div`
 export const Anchor = styled.a`
   &:visited {
     text-decoration: none;
-    color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+    color: ${props => (props.colorSwitch === true ? "black" : "white")};
   }
   &:hover {
     color: #ecb365;
