@@ -1,13 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 // images
-import AriAvatar from '../../Assets/AriAvatar.png';
+import AriAvatar from "../../Assets/AriAvatar.png";
 
 export const BodyWrapper = styled.div`
-  height: 80vh;
-  max-height: 800px;
+  height: 85vh;
+  /* max-height: 800px; */
 
-  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
 
   display: flex;
   justify-content: center;
@@ -74,7 +74,7 @@ export const IntroContainer = styled.div`
 `;
 
 export const ImgContainer = styled.div`
-  width: 40%;
+  width: 50%;
   // media queries
   @media (min-width: 1201px) {
   }
@@ -100,7 +100,7 @@ export const Img = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  width: 60%;
+  width: 50%;
 
   display: flex;
   flex-flow: column;
@@ -125,11 +125,11 @@ export const TextContainer = styled.div`
 `;
 
 export const DescriptionBox = styled.div`
-  height: 100%;
+  height: 40%;
 
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 
   margin-left: 30px;
 `;
@@ -142,10 +142,14 @@ export const ProjectButton = styled.div`
   align-items: center;
 `;
 
+export const DescriptionText = styled.div`
+  padding-bottom: 100px;
+`;
+
 export const Anchor = styled.a`
   &:visited {
     text-decoration: none;
-    color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+    color: ${props => (props.colorSwitch === true ? "black" : "white")};
   }
   &:hover {
     color: #ecb365;

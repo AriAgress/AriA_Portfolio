@@ -16,6 +16,7 @@ import {
   ImgContainer,
   TextContainer,
   DescriptionBox,
+  DescriptionText,
   ProjectButton,
   Anchor,
   Img,
@@ -35,11 +36,11 @@ const Body = () => {
             <TextContainer>
               <QuoteBox />
               <DescriptionBox>
-                <div>
+                <DescriptionText>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                   ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
                   dolor sit amet, consectetur adipiscing elit.
-                </div>
+                </DescriptionText>
                 <div>
                   Lets chat at <b>ariagress@gmail.com</b>
                 </div>
