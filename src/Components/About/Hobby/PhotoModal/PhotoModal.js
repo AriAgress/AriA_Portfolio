@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect, useCallback } from "react";
 import styled from "styled-components";
+import { useSelector, useDispatch } from "react-redux";
+import { setModal } from "../../../../Actions/Index";
 
 const Background = styled.div`
   width: 100%;
@@ -32,8 +34,28 @@ const ModalIMG = styled.div`
 `;
 
 const PhotoModal = () => {
+  const toggleModal = useSelector(state => state.toggleModal);
+  const dispatch = useDispatch();
+
+  const keyPress = useCallback(
+    e => {
+      if (e.key === "Escape" && toggleModal) {
+        setModal(false);
+        console.log("I pressed");
+      }
+    },
+    [toggleModal, setModal]
+  );
+
+  useEffect(() => {
+    document.addEventListener("keydown", keyPress);
+    return () => document.removeEventListener("keydown", keyPress);
+  }, [keyPress]);
+
   return (
-    <Background>
+    <Background
+      toggleModal={toggleModal}
+      onClick={() => dispatch(setModal(!toggleModal))}>
       <ModalWrapper>
         <ModalIMG>YO-DAL</ModalIMG>
       </ModalWrapper>
