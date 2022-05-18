@@ -25,13 +25,12 @@ const ModalWrapper = styled.div`
   color: #000;
   position: relative;
   z-index: 10;
-  border-radius: 10px;
 `;
 
 const ModalIMG = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   background: white;
 `;
 

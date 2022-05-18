@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 // components
 import Projects from "../Projects/Projects";
@@ -25,23 +27,29 @@ import {
 const Body = () => {
   const colorSwitch = useSelector(state => state.colorSwitch);
 
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+    });
+  }, []);
+
   return (
     <div>
       <BodyWrapper colorSwitch={colorSwitch}>
         <BodyContainer>
           <IntroContainer>
             <ImgContainer>
-              <Img />
+              <Img data-aos="fade-right" />
             </ImgContainer>
             <TextContainer>
               <QuoteBox />
               <DescriptionBox>
-                <DescriptionText>
+                <DescriptionText data-aos="fade-left" data-aos-duration="1500">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                   ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
                   dolor sit amet, consectetur adipiscing elit.
                 </DescriptionText>
-                <div>
+                <div data-aos="fade-left" data-aos-duration="2500">
                   Lets chat at <b>ariagress@gmail.com</b>
                 </div>
               </DescriptionBox>
