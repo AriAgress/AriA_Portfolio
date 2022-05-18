@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 
 // components
@@ -31,7 +31,7 @@ const Body = () => {
         <BodyContainer>
           <IntroContainer>
             <ImgContainer>
-              <Img></Img>
+              <Img />
             </ImgContainer>
             <TextContainer>
               <QuoteBox />
