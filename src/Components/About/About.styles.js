@@ -31,17 +31,18 @@ export const ImgContainer = styled.div`
   box-shadow: ${props =>
     props.colorSwitch === true ? "-20px -20px #84b4ca" : "-20px -20px #064663"};
   border-radius: 25px;
-  /* background-color: orange; */
   margin-left: 20px;
 `;
 export const AboutImg = styled.div`
   height: 100%;
   width: 100%;
   background-image: url(${AriProfile});
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 25px;
 `;
+
 export const TextContainer = styled.div`
   height: 400px;
   width: 50%;

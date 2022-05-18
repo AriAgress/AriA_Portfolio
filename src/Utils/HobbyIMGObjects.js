@@ -1,4 +1,4 @@
-import MinPhotoFriends from "../Assets/MinPhotoFriends.png";
+import MinFriends from "../Assets/MinFriends.png";
 import StandingMan from "../Assets/SandingMan.png";
 import HappyBark from "../Assets/HappyBark.png";
 
@@ -9,7 +9,7 @@ export const HobbyImages = [
   },
   {
     projectID: 2,
-    projectImage: MinPhotoFriends,
+    projectImage: MinFriends,
   },
   {
     projectID: 3,
