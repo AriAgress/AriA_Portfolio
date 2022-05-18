@@ -30,7 +30,7 @@ const Hobby = () => {
             toggleModal={toggleModal}
             onClick={() => dispatch(setModal(!toggleModal))}
           />
-          {toggleModal === true ? null : <PhotoModal />}
+          {toggleModal === true ? <PhotoModal /> : null}
           <HobbyIMG />
           <HobbyIMG />
         </ImgContainer>
