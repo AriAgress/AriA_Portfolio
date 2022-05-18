@@ -2,6 +2,8 @@ import React, { useEffect, useCallback } from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { setModal } from "../../../../Actions/Index";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Background = styled.div`
   width: 100%;
@@ -23,19 +25,24 @@ const ModalWrapper = styled.div`
   color: #000;
   position: relative;
   z-index: 10;
-  border-radius: 10px;
 `;
 
 const ModalIMG = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   background: white;
 `;
 
 const PhotoModal = () => {
   const toggleModal = useSelector(state => state.toggleModal);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    });
+  }, []);
 
   const keyPress = useCallback(
     e => {
@@ -44,7 +51,7 @@ const PhotoModal = () => {
         console.log("I pressed");
       }
     },
-    [toggleModal, setModal]
+    [setModal, toggleModal]
   );
 
   useEffect(() => {
@@ -56,7 +63,7 @@ const PhotoModal = () => {
     <Background
       toggleModal={toggleModal}
       onClick={() => dispatch(setModal(!toggleModal))}>
-      <ModalWrapper>
+      <ModalWrapper data-aos="fade-up">
         <ModalIMG>YO-DAL</ModalIMG>
       </ModalWrapper>
     </Background>
