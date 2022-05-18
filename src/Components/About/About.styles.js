@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+//images
+import AriProfile from "../../Assets/AriProfile.png";
+
 export const AboutWrapper = styled.div`
   /* height: 800px; */
 
@@ -28,10 +31,17 @@ export const ImgContainer = styled.div`
   box-shadow: ${props =>
     props.colorSwitch === true ? "-20px -20px #84b4ca" : "-20px -20px #064663"};
   border-radius: 25px;
-  background-color: orange;
+  /* background-color: orange; */
   margin-left: 20px;
 `;
-export const AboutImg = styled.div``;
+export const AboutImg = styled.div`
+  height: 100%;
+  width: 100%;
+  background-image: url(${AriProfile});
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+`;
 export const TextContainer = styled.div`
   height: 400px;
   width: 50%;
