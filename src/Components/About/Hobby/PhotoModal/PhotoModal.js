@@ -5,6 +5,9 @@ import { setModal } from "../../../../Actions/Index";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+//icons
+// import { AiOutlineClose } from "react-icons/ai";
+
 const Background = styled.div`
   width: 100%;
   height: 100%;
@@ -33,6 +36,20 @@ const ModalIMG = styled.div`
   border-radius: 10px;
   background: white;
 `;
+
+// const IconBox = styled.div`
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   font-size: 2.5em;
+//   margin: 40px;
+//   color: white;
+
+//   &:hover {
+//     cursor: pointer;
+//     color: red;
+//   }
+// `;
 
 const PhotoModal = () => {
   const toggleModal = useSelector(state => state.toggleModal);
@@ -66,6 +83,12 @@ const PhotoModal = () => {
       <ModalWrapper data-aos="fade-up">
         <ModalIMG>YO-DAL</ModalIMG>
       </ModalWrapper>
+      {/* <IconBox>
+        <AiOutlineClose
+          toggleModal={toggleModal}
+          onClick={() => dispatch(setModal(!toggleModal))}
+        />
+      </IconBox> */}
     </Background>
   );
 };
