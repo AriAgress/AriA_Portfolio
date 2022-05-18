@@ -24,7 +24,7 @@ const Projects = () => {
 
   const colorSwitch = useSelector(state => state.colorSwitch);
   return (
-    <ProjectsWrapper id="ToProject">
+    <ProjectsWrapper id="ToProject" data-aos="fade-right">
       <IntroText colorSwitch={colorSwitch}>WEB APPLICATIONS</IntroText>
       {projects.map((p, i) => (
         <ProjectsContainer key={i} even={p.projectID % 2 === 0 ? true : false}>

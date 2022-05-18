@@ -1,4 +1,9 @@
-import React from 'react';
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setModal } from "../../../Actions/Index";
+
+//components
+import PhotoModal from "./PhotoModal/PhotoModal";
 
 //stylesheet
 import {
@@ -6,9 +11,12 @@ import {
   HobbyContainer,
   ImgContainer,
   HobbyIMG,
-} from './Hobby.styles.js';
+} from "./Hobby.styles.js";
 
 const Hobby = () => {
+  const toggleModal = useSelector(state => state.toggleModal);
+  const dispatch = useDispatch();
+
   return (
     <HobbyWrapper>
       <HobbyContainer>
@@ -18,7 +26,11 @@ const Hobby = () => {
           dolor sit amet, consectetur adipiscing elit.
         </h4>
         <ImgContainer>
-          <HobbyIMG />
+          <HobbyIMG
+            toggleModal={toggleModal}
+            onClick={() => dispatch(setModal(!toggleModal))}
+          />
+          {toggleModal === true ? null : <PhotoModal />}
           <HobbyIMG />
           <HobbyIMG />
         </ImgContainer>
