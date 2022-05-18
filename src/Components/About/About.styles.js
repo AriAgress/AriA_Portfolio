@@ -29,6 +29,7 @@ export const ImgContainer = styled.div`
     props.colorSwitch === true ? "-20px -20px #84b4ca" : "-20px -20px #064663"};
   border-radius: 25px;
   background-color: orange;
+  margin-left: 20px;
 `;
 export const AboutImg = styled.div``;
 export const TextContainer = styled.div`
