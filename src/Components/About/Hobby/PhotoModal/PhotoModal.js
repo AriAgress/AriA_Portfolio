@@ -40,7 +40,7 @@ const PhotoModal = () => {
   const keyPress = useCallback(
     e => {
       if (e.key === "Escape" && toggleModal) {
-        setModal(false);
+        dispatch(setModal(false));
         console.log("I pressed");
       }
     },
