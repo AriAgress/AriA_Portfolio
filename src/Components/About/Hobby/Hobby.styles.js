@@ -38,6 +38,5 @@ export const HobbyIMG = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-color: blue; */
   border-radius: 25px;
 `;
