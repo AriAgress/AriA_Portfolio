@@ -34,6 +34,10 @@ export const ImgContainer = styled.div`
 export const HobbyIMG = styled.div`
   height: 250px;
   width: 250px;
-  background-color: blue;
+  background: url(${props => props.image && props.image});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: blue; */
   border-radius: 25px;
 `;
