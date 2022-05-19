@@ -85,6 +85,7 @@ export const ImgContainer = styled.div`
   @media (min-width: 481px) and (max-width: 768px) {
     height: 100%;
     width: 100%;
+    padding-top: 30px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
   }
@@ -144,6 +145,19 @@ export const ProjectButton = styled.div`
 
 export const DescriptionText = styled.div`
   padding-bottom: 100px;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+  }
 `;
 
 export const Anchor = styled.a`
