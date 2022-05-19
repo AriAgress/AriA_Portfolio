@@ -57,7 +57,6 @@ const ModalIMG = styled.div`
 const PhotoModal = () => {
   const toggleModal = useSelector(state => state.toggleModal);
   const modalContent = useSelector(state => state.modalContent);
-  // const modalContent = useSelector(state => state.modalContent)
   const dispatch = useDispatch();
 
   useEffect(() => {

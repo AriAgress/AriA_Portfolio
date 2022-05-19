@@ -19,11 +19,6 @@ const Hobby = () => {
   const modalContent = useSelector(state => state.modalContent);
   const dispatch = useDispatch();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const [item, setItem] = useState("");
-
   return (
     <HobbyWrapper>
       <HobbyContainer>
@@ -33,12 +28,6 @@ const Hobby = () => {
           dolor sit amet, consectetur adipiscing elit.
         </h4>
         <ImgContainer>
-          {/* <HobbyIMG
-            toggleModal={toggleModal}
-            onClick={() => dispatch(setModal(!toggleModal))}
-          />
-          <HobbyIMG /> */}
-
           {HobbyImages.map((image, index) => (
             <HobbyIMG
               key={index}
@@ -51,7 +40,6 @@ const Hobby = () => {
               image={image.projectImage}
             />
           ))}
-
           {toggleModal === true ? <PhotoModal /> : null}
         </ImgContainer>
       </HobbyContainer>
