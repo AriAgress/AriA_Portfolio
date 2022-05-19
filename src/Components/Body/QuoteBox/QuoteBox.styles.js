@@ -96,6 +96,10 @@ export const DialogBox = styled.div`
   @media (min-width: 481px) and (max-width: 768px) {
     height: 60%;
     width: 80%;
+    margin-bottom: 30px;
+    &:after {
+      content: none;
+    }
   }
   @media (min-width: 100px) and (max-width: 480px) {
   }
