@@ -11,3 +11,10 @@ export const setModal = bool => {
     payload: bool,
   };
 };
+
+export const setModalContent = string => {
+  return {
+    type: "SET_MODAL_CONTENT",
+    payload: string,
+  };
+};

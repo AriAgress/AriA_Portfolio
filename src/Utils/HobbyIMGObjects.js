@@ -1,5 +1,5 @@
 import MinFriends from "../Assets/MinFriends.png";
-import StandingMan from "../Assets/SandingMan.png";
+import StandingMan from "../Assets/StandingMan.png";
 import HappyBark from "../Assets/HappyBark.png";
 
 export const HobbyImages = [

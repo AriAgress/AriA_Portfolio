@@ -34,7 +34,10 @@ const ModalIMG = styled.div`
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background: white;
+  background: url(${props => props.modalContent && props.modalContent});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 // const IconBox = styled.div`
@@ -53,6 +56,8 @@ const ModalIMG = styled.div`
 
 const PhotoModal = () => {
   const toggleModal = useSelector(state => state.toggleModal);
+  const modalContent = useSelector(state => state.modalContent);
+  // const modalContent = useSelector(state => state.modalContent)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -81,7 +86,7 @@ const PhotoModal = () => {
       toggleModal={toggleModal}
       onClick={() => dispatch(setModal(!toggleModal))}>
       <ModalWrapper data-aos="fade-up">
-        <ModalIMG>YO-DAL</ModalIMG>
+        <ModalIMG modalContent={modalContent}></ModalIMG>
       </ModalWrapper>
       {/* <IconBox>
         <AiOutlineClose
