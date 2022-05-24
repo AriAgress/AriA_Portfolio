@@ -94,6 +94,7 @@ export const ProjectImg = styled.img`
   @media (min-width: 769px) and (max-width: 1024px) {
   }
   @media (min-width: 481px) and (max-width: 768px) {
+    margin-top: 25px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
   }
@@ -129,6 +130,7 @@ export const ProjectDescription = styled.div`
     margin-left: 0px;
     margin-right: 0px;
     padding: 0px;
+    border-radius: 0px 0px 25px 25px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
   }
