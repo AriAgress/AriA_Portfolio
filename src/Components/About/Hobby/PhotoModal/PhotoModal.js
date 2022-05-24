@@ -46,7 +46,7 @@ const PhotoModal = () => {
       toggleModal={toggleModal}
       onClick={() => dispatch(setModal(!toggleModal))}>
       <ModalWrapper data-aos="fade-up">
-        <ModalIMG modalContent={modalContent}></ModalIMG>
+        <ModalIMG modalContent={modalContent} />
       </ModalWrapper>
       {/* <IconBox>
         <AiOutlineClose
