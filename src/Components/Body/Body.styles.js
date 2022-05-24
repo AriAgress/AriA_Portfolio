@@ -83,9 +83,9 @@ export const ImgContainer = styled.div`
   @media (min-width: 769px) and (max-width: 1024px) {
   }
   @media (min-width: 481px) and (max-width: 768px) {
-    height: 100%;
-    width: 100%;
-    padding-top: 30px;
+    height: 70%;
+    width: 70%;
+    padding-top: 40px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
   }

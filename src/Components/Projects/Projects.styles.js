@@ -131,6 +131,7 @@ export const ProjectDescription = styled.div`
     margin-right: 0px;
     padding: 0px;
     border-radius: 0px 0px 25px 25px;
+    min-height: 350px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
   }
