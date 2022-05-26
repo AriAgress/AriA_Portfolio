@@ -145,4 +145,9 @@ export const Content = styled.div`
   margin-right: ${props => (props.even ? "80px" : "0px")};
 `;
 
-export const LanguageContainer = styled.div``;
+export const LanguageContainer = styled.div`
+  display: flex;
+  flex-flow: row;
+`;
+
+export const LanguageIcon = styled.div``;
