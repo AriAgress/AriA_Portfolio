@@ -144,3 +144,5 @@ export const Content = styled.div`
   margin-left: ${props => (props.even ? "0px" : "80px")};
   margin-right: ${props => (props.even ? "80px" : "0px")};
 `;
+
+export const LanguageContainer = styled.div``;
