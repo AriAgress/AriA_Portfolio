@@ -5,6 +5,10 @@ import { setModal } from "../../Actions/Index";
 import { setModalContent } from "../../Actions/Index";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
+//Icons
+import { DiJavascript, DiReact, DiHtml5, DiCss3 } from "react-icons/di";
+
 //components
 import PhotoModal from "../../Components/About/Hobby/PhotoModal/PhotoModal";
 
@@ -18,6 +22,7 @@ import {
   ProjectDescription,
   Content,
   LanguageContainer,
+  LanguageIcon,
 } from "./Projects.styles.js";
 
 const Projects = () => {
@@ -61,10 +66,18 @@ const Projects = () => {
                 <h1>{p.projectTitle}</h1>
                 <p>{p.description}</p>
                 <LanguageContainer>
-                  <p>{p.language}</p>
-                  <p>{p.language2}</p>
-                  <p>{p.language3}</p>
-                  <p>{p.language4}</p>
+                  <LanguageIcon>
+                    <DiJavascript />
+                  </LanguageIcon>
+                  <LanguageIcon>
+                    <DiReact />
+                  </LanguageIcon>
+                  <LanguageIcon>
+                    <DiHtml5 />
+                  </LanguageIcon>
+                  <LanguageIcon>
+                    <DiCss3 />
+                  </LanguageIcon>
                 </LanguageContainer>
               </Content>
             </ProjectDescription>
