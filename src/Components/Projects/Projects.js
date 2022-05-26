@@ -17,6 +17,7 @@ import {
   ProjectImg,
   ProjectDescription,
   Content,
+  LanguageContainer,
 } from "./Projects.styles.js";
 
 const Projects = () => {
@@ -59,7 +60,12 @@ const Projects = () => {
               <Content>
                 <h1>{p.projectTitle}</h1>
                 <p>{p.description}</p>
-                <p>{p.language}</p>
+                <LanguageContainer>
+                  <p>{p.language}</p>
+                  <p>{p.language2}</p>
+                  <p>{p.language3}</p>
+                  <p>{p.language4}</p>
+                </LanguageContainer>
               </Content>
             </ProjectDescription>
           </ProjectsContainer>
