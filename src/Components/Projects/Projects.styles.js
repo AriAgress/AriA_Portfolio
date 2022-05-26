@@ -150,4 +150,6 @@ export const LanguageContainer = styled.div`
   flex-flow: row;
 `;
 
-export const LanguageIcon = styled.div``;
+export const LanguageIcon = styled.div`
+  font-size: 35px;
+`;

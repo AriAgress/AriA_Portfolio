@@ -6,9 +6,6 @@ import { setModalContent } from "../../Actions/Index";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-//Icons
-import { DiJavascript, DiReact, DiHtml5, DiCss3 } from "react-icons/di";
-
 //components
 import PhotoModal from "../../Components/About/Hobby/PhotoModal/PhotoModal";
 
@@ -66,18 +63,10 @@ const Projects = () => {
                 <h1>{p.projectTitle}</h1>
                 <p>{p.description}</p>
                 <LanguageContainer>
-                  <LanguageIcon>
-                    <DiJavascript />
-                  </LanguageIcon>
-                  <LanguageIcon>
-                    <DiReact />
-                  </LanguageIcon>
-                  <LanguageIcon>
-                    <DiHtml5 />
-                  </LanguageIcon>
-                  <LanguageIcon>
-                    <DiCss3 />
-                  </LanguageIcon>
+                  <LanguageIcon>{p.language}</LanguageIcon>
+                  <LanguageIcon>{p.language2}</LanguageIcon>
+                  <LanguageIcon>{p.language3}</LanguageIcon>
+                  <LanguageIcon>{p.language4}</LanguageIcon>
                 </LanguageContainer>
               </Content>
             </ProjectDescription>
