@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Projects from "../Projects/Projects";
 
 //components
 import ToggleSwitch from "./ToggleSwitch/ToggleSwitch";
@@ -12,12 +11,18 @@ import {
   NavWrapper,
   NavContainer,
   LogoContainer,
+  NavLinkHamburger,
   NavLinksContainer,
   Links,
   I,
 } from "./Nav.styles.js";
 
 const Nav = () => {
+  // const [click, setClick] = useState(false);
+
+  // const handleClick = () => setClick(!click);
+  // const closeMobileMenu = () => setClick(false);
+
   const colorSwitch = useSelector(state => state.colorSwitch);
 
   return (
@@ -26,6 +31,7 @@ const Nav = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <LogoContainer>Logo</LogoContainer>
         </Link>
+        <NavLinkHamburger></NavLinkHamburger>
         <NavLinksContainer>
           <Link to="/#ToProject" style={{ textDecoration: "none" }}>
             <Links colorSwitch={colorSwitch} alt="PROJECTS">
