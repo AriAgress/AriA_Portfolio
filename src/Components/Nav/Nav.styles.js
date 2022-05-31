@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const NavWrapper = styled.div`
   height: 125px;
 
-  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
   border-bottom: 5px solid #ecb365;
 
   display: flex;
@@ -43,6 +43,8 @@ export const LogoContainer = styled.div`
   align-items: center;
 `;
 
+export const NavLinkHamburger = styled.div``;
+
 export const NavLinksContainer = styled.div`
   display: flex;
   flex-flow: row;
@@ -75,7 +77,7 @@ export const Links = styled.div`
     inset: 0;
     font-size: 15px;
     font-weight: bold;
-    color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+    color: ${props => (props.colorSwitch === true ? "black" : "white")};
     letter-spacing: 4px;
     opacity: 1;
   }
@@ -93,7 +95,7 @@ export const Links = styled.div`
 `;
 
 export const I = styled.i`
-  color: ${props => (props.colorSwitch === true ? 'black' : 'white')};
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 4px;
