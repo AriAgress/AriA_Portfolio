@@ -43,13 +43,24 @@ export const LogoContainer = styled.div`
   align-items: center;
 `;
 
-export const NavLinkHamburger = styled.div``;
-
 export const NavLinksContainer = styled.div`
   display: flex;
   flex-flow: row;
   justify-content: center;
   align-items: center;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    display: none;
+  }
 `;
 
 export const Links = styled.div`
