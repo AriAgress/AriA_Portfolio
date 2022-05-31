@@ -37,6 +37,8 @@ export const AboutContainer = styled.div`
     flex-flow: column;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    display: flex;
+    flex-flow: column;
   }
 `;
 
@@ -60,6 +62,7 @@ export const ImgContainer = styled.div`
     width: 60%;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    width: 90%;
   }
 `;
 export const AboutImg = styled.div`
@@ -89,8 +92,13 @@ export const TextContainer = styled.div`
   @media (min-width: 769px) and (max-width: 1024px) {
   }
   @media (min-width: 481px) and (max-width: 768px) {
-    width: 80%;
+    width: 90%;
+    margin-top: 25px;
+    padding-left: 0;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    width: 90%;
+    margin-top: 25px;
+    padding-left: 0;
   }
 `;
