@@ -18,9 +18,6 @@ import {
 } from "./Nav.styles.js";
 
 const Nav = () => {
-  // const handleClick = () => setClick(!click);
-  // const closeMobileMenu = () => setClick(false);
-
   const colorSwitch = useSelector(state => state.colorSwitch);
 
   return (
@@ -52,8 +49,8 @@ const Nav = () => {
               <I colorSwitch={colorSwitch}>T</I>
             </Links>
           </Link>
+          <ToggleSwitch colorSwitch={colorSwitch} />
         </NavLinksContainer>
-        <ToggleSwitch colorSwitch={colorSwitch} />
       </NavContainer>
     </NavWrapper>
   );

@@ -1,35 +1,41 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-//icons
+import { Link } from "react-router-dom";
+
+// icons
 import { GiHamburgerMenu } from "react-icons/gi";
 
-const NavHamburgerContainer = styled.div`
-  // media queries
-  @media (min-width: 1201px) {
-    display: none;
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-    display: none;
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-    display: none;
-  }
-  @media (min-width: 481px) and (max-width: 768px) {
-    display: none;
-  }
-  @media (min-width: 100px) and (max-width: 480px) {
-    display: block;
-  }
-`;
+// components
+import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
+
+// stylesheet
+import {
+  NavHamburgerMode,
+  HamburgerMenu,
+  HamburgerContainer,
+  Links,
+} from "./NavHamburger.styles.js";
 
 const NavHamburger = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <NavHamburgerContainer>
+    <NavHamburgerMode>
       <GiHamburgerMenu isOpen={isOpen} onClick={() => setOpen(!isOpen)} />
-      {isOpen && <div>Hello</div>}
-    </NavHamburgerContainer>
+      {isOpen && (
+        <HamburgerMenu>
+          <HamburgerContainer>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <Links>Home</Links>
+            </Link>
+            <Link to="/about" style={{ textDecoration: "none" }}>
+              <Links>About</Links>
+            </Link>
+          </HamburgerContainer>
+        </HamburgerMenu>
+      )}
+      <ToggleSwitch />
+    </NavHamburgerMode>
   );
 };
 
