@@ -47,6 +47,7 @@ export const BodyContainer = styled.div`
   }
   @media (min-width: 100px) and (max-width: 480px) {
     width: 95%;
+    margin-top: 50px;
   }
 `;
 
@@ -70,6 +71,9 @@ export const IntroContainer = styled.div`
     text-align: center;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    flex-flow: column-reverse;
+    align-items: center;
+    text-align: center;
   }
 `;
 
@@ -88,6 +92,9 @@ export const ImgContainer = styled.div`
     padding-top: 40px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    height: 70%;
+    width: 70%;
+    padding-top: 40px;
   }
 `;
 
@@ -122,6 +129,8 @@ export const TextContainer = styled.div`
     margin-left: 0;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    width: 90%;
+    margin-left: 0;
   }
 `;
 
@@ -157,6 +166,7 @@ export const DescriptionText = styled.div`
     padding-bottom: 30px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    padding-bottom: 30px;
   }
 `;
 
