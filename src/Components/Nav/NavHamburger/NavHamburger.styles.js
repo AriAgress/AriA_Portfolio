@@ -19,6 +19,10 @@ export const NavHamburgerMode = styled.div`
   }
 `;
 
+export const HamburgerIcon = styled.div`
+  margin-right: 20px;
+`;
+
 export const HamburgerMenu = styled.div`
   position: absolute;
   width: 100%;

@@ -12,6 +12,7 @@ import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 // stylesheet
 import {
   NavHamburgerMode,
+  HamburgerIcon,
   HamburgerMenu,
   HamburgerContainer,
   Links,
@@ -21,7 +22,9 @@ const NavHamburger = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <NavHamburgerMode>
-      <GiHamburgerMenu isOpen={isOpen} onClick={() => setOpen(!isOpen)} />
+      <HamburgerIcon>
+        <GiHamburgerMenu isOpen={isOpen} onClick={() => setOpen(!isOpen)} />
+      </HamburgerIcon>
       {isOpen && (
         <HamburgerMenu>
           <HamburgerContainer>
