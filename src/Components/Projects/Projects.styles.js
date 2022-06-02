@@ -59,6 +59,8 @@ export const ProjectsContainer = styled.div`
     margin-bottom: 50px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    flex-flow: column;
+    margin-bottom: 50px;
   }
 `;
 
@@ -78,6 +80,8 @@ export const ProjectImgContainer = styled.div`
     width: 75%;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    height: 300px;
+    width: 75%;
   }
 `;
 
@@ -97,6 +101,7 @@ export const ProjectImg = styled.img`
     margin-top: 25px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    margin-top: 25px;
   }
 `;
 
@@ -134,6 +139,12 @@ export const ProjectDescription = styled.div`
     min-height: 350px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
+    width: 75%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    border-radius: 0px 0px 25px 25px;
+    min-height: 300px;
   }
 `;
 
