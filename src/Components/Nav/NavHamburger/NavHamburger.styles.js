@@ -20,6 +20,9 @@ export const NavHamburgerMode = styled.div`
 `;
 
 export const HamburgerIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 20px;
 `;
 

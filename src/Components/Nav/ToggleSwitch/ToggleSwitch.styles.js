@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const SwitchWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const SwitchContainer = styled.div`
   display: flex;
   justify-content: flex-start;
