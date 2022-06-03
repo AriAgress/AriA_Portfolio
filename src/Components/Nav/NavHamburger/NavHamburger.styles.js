@@ -24,6 +24,7 @@ export const HamburgerIcon = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
 `;
 
 export const HamburgerMenu = styled.div`

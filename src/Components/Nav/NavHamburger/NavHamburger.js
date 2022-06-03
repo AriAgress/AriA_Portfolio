@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 // icons
-import { GrMenu, GrClose } from "react-icons/gr";
+import { RiMenuFill } from "react-icons/ri";
+import { IoMdClose } from "react-icons/io";
 
 // components
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -19,10 +21,16 @@ import {
 
 const NavHamburger = () => {
   const [isOpen, setOpen] = useState(false);
+
+  const colorSwitch = useSelector(state => state.colorSwitch);
+
   return (
     <NavHamburgerMode>
-      <HamburgerIcon isOpen={isOpen} onClick={() => setOpen(!isOpen)}>
-        {(isOpen && <GrClose />) || <GrMenu />}
+      <HamburgerIcon
+        isOpen={isOpen}
+        onClick={() => setOpen(!isOpen)}
+        colorSwitch={colorSwitch}>
+        {(isOpen && <IoMdClose />) || <RiMenuFill />}
       </HamburgerIcon>
       {isOpen && (
         <HamburgerMenu>
