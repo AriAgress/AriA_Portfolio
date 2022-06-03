@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -24,16 +26,24 @@ const NavHamburger = () => {
 
   const colorSwitch = useSelector(state => state.colorSwitch);
 
+  useEffect(() => {
+    Aos.init({
+      duration: 500,
+    });
+  }, []);
+
   return (
     <NavHamburgerMode>
       <HamburgerIcon
         isOpen={isOpen}
         onClick={() => setOpen(!isOpen)}
         colorSwitch={colorSwitch}>
-        {(isOpen && <IoMdClose />) || <RiMenuFill />}
+        {(isOpen && <IoMdClose data-aos="flip-left" />) || (
+          <RiMenuFill data-aos="flip-right" />
+        )}
       </HamburgerIcon>
       {isOpen && (
-        <HamburgerMenu>
+        <HamburgerMenu data-aos="fade-in">
           <HamburgerContainer>
             <Link to="/" style={{ textDecoration: "none" }}>
               <Links>Home</Links>
