@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 
 import { Link } from "react-router-dom";
 
 // icons
-import { GiHamburgerMenu } from "react-icons/gi";
+import { GrMenu, GrClose } from "react-icons/gr";
 
 // components
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -22,8 +21,8 @@ const NavHamburger = () => {
   const [isOpen, setOpen] = useState(false);
   return (
     <NavHamburgerMode>
-      <HamburgerIcon>
-        <GiHamburgerMenu isOpen={isOpen} onClick={() => setOpen(!isOpen)} />
+      <HamburgerIcon isOpen={isOpen} onClick={() => setOpen(!isOpen)}>
+        {(isOpen && <GrClose />) || <GrMenu />}
       </HamburgerIcon>
       {isOpen && (
         <HamburgerMenu>
