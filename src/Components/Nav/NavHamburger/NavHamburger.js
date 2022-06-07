@@ -38,9 +38,9 @@ const NavHamburger = () => {
         isOpen={isOpen}
         onClick={() => setOpen(!isOpen)}
         colorSwitch={colorSwitch}>
-        {(isOpen && <IoMdClose data-aos="flip-left" />) || (
-          <RiMenuFill data-aos="flip-right" />
-        )}
+        {(isOpen && (
+          <IoMdClose style={{ color: "red" }} data-aos="flip-left" />
+        )) || <RiMenuFill data-aos="flip-right" />}
       </HamburgerIcon>
       {isOpen && (
         <HamburgerMenu data-aos="fade-in">

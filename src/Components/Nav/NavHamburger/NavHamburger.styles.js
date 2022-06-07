@@ -24,7 +24,14 @@ export const HamburgerIcon = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: 20px;
+  opacity: 0.7;
   color: ${props => (props.colorSwitch === true ? "black" : "white")};
+  font-size: 24px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
 `;
 
 export const HamburgerMenu = styled.div`
