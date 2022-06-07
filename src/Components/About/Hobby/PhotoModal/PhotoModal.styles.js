@@ -15,7 +15,6 @@ export const Background = styled.div`
 export const ModalWrapper = styled.div`
   width: 75vw;
   height: 60vh;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.5);
   position: relative;
   z-index: 10;
 `;
@@ -23,9 +22,8 @@ export const ModalWrapper = styled.div`
 export const ModalIMG = styled.div`
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   background: url(${props => props.modalContent && props.modalContent});
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 `;
