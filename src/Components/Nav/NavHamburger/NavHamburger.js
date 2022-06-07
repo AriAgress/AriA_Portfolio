@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setMenu } from "../../../Actions/Index";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
 
 // icons
 import { RiMenuFill } from "react-icons/ri";
@@ -22,7 +23,10 @@ import {
 } from "./NavHamburger.styles.js";
 
 const NavHamburger = () => {
-  const [isOpen, setOpen] = useState(false);
+  // const [isOpen, setOpen] = useState(false);
+
+  const toggleHamburgerMenu = useSelector(state => state.toggleHamburgerMenu);
+  const dispatch = useDispatch();
 
   const colorSwitch = useSelector(state => state.colorSwitch);
 
@@ -35,14 +39,15 @@ const NavHamburger = () => {
   return (
     <NavHamburgerMode>
       <HamburgerIcon
-        isOpen={isOpen}
-        onClick={() => setOpen(!isOpen)}
+        toggleHamburgerMenu={toggleHamburgerMenu}
+        // onClick={() => setOpen(!isOpen)}
+        onClick={() => dispatch(setMenu(!toggleHamburgerMenu))}
         colorSwitch={colorSwitch}>
-        {(isOpen && (
+        {(toggleHamburgerMenu && (
           <IoMdClose style={{ color: "red" }} data-aos="flip-left" />
         )) || <RiMenuFill data-aos="flip-right" />}
       </HamburgerIcon>
-      {isOpen && (
+      {toggleHamburgerMenu && (
         <HamburgerMenu data-aos="fade-in">
           <HamburgerContainer>
             <Link to="/" style={{ textDecoration: "none" }}>
