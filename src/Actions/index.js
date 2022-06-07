@@ -12,6 +12,13 @@ export const setModal = bool => {
   };
 };
 
+export const setMenu = bool => {
+  return {
+    type: "TOGGLE_MENU",
+    payload: bool,
+  };
+};
+
 export const setModalContent = string => {
   return {
     type: "SET_MODAL_CONTENT",
