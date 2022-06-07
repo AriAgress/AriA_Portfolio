@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { setMenu } from "../../Actions/Index";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -25,6 +26,9 @@ import {
 } from "./Body.styles.js";
 
 const Body = () => {
+  const toggleHamburgerMenu = useSelector(state => state.toggleHamburgerMenu);
+  const dispatch = useDispatch();
+
   const colorSwitch = useSelector(state => state.colorSwitch);
 
   useEffect(() => {
@@ -34,7 +38,9 @@ const Body = () => {
   }, []);
 
   return (
-    <div>
+    <div
+      toggleHamburgerMenu={toggleHamburgerMenu}
+      onClick={() => dispatch(setMenu(false))}>
       <BodyWrapper colorSwitch={colorSwitch}>
         <BodyContainer>
           <IntroContainer>
