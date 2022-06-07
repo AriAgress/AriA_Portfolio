@@ -1,5 +1,6 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { setMenu } from "../../Actions/Index";
 import { FaRegHandPeace } from "react-icons/fa";
 
 // components
@@ -15,9 +16,15 @@ import {
 } from "./About.styles.js";
 
 const About = () => {
+  const toggleHamburgerMenu = useSelector(state => state.toggleHamburgerMenu);
+  const dispatch = useDispatch();
+
   const colorSwitch = useSelector(state => state.colorSwitch);
   return (
-    <AboutWrapper colorSwitch={colorSwitch}>
+    <AboutWrapper
+      toggleHamburgerMenu={toggleHamburgerMenu}
+      onClick={() => dispatch(setMenu(false))}
+      colorSwitch={colorSwitch}>
       <AboutContainer>
         <ImgContainer colorSwitch={colorSwitch}>
           <AboutImg />
