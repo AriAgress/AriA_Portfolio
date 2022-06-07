@@ -23,8 +23,6 @@ import {
 } from "./NavHamburger.styles.js";
 
 const NavHamburger = () => {
-  // const [isOpen, setOpen] = useState(false);
-
   const toggleHamburgerMenu = useSelector(state => state.toggleHamburgerMenu);
   const dispatch = useDispatch();
 
@@ -40,7 +38,6 @@ const NavHamburger = () => {
     <NavHamburgerMode>
       <HamburgerIcon
         toggleHamburgerMenu={toggleHamburgerMenu}
-        // onClick={() => setOpen(!isOpen)}
         onClick={() => dispatch(setMenu(!toggleHamburgerMenu))}
         colorSwitch={colorSwitch}>
         {(toggleHamburgerMenu && (
@@ -51,10 +48,18 @@ const NavHamburger = () => {
         <HamburgerMenu data-aos="fade-in">
           <HamburgerContainer>
             <Link to="/" style={{ textDecoration: "none" }}>
-              <Links>Home</Links>
+              <Links
+                toggleHamburgerMenu={toggleHamburgerMenu}
+                onClick={() => dispatch(setMenu(false))}>
+                Home
+              </Links>
             </Link>
             <Link to="/about" style={{ textDecoration: "none" }}>
-              <Links>About</Links>
+              <Links
+                toggleHamburgerMenu={toggleHamburgerMenu}
+                onClick={() => dispatch(setMenu(false))}>
+                About
+              </Links>
             </Link>
           </HamburgerContainer>
         </HamburgerMenu>
