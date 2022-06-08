@@ -22,7 +22,7 @@ export const SwitchContainer = styled.div`
 `;
 
 export const Switch = styled.div`
-  background: ${props => (props.colorSwitch === true ? "#ecb365" : "#064663")};
+  background: ${props => (props.colorSwitch === true ? "#ecb365" : "#3BD1BD")};
   border-radius: 50%;
   width: 23px;
   height: 23px;

@@ -31,7 +31,11 @@ const About = () => {
         </ImgContainer>
         <TextContainer>
           <h1>
-            About Me <FaRegHandPeace style={{ color: "#F1AC52" }} />
+            About Me{" "}
+            <FaRegHandPeace
+              colorSwitch={colorSwitch}
+              style={{ color: colorSwitch ? "#ecb365" : "#B6EFA3" }}
+            />
           </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
