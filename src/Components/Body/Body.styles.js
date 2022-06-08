@@ -176,6 +176,6 @@ export const Anchor = styled.a`
     color: ${props => (props.colorSwitch === true ? "black" : "white")};
   }
   &:hover {
-    color: #ecb365;
+    color: ${props => (props.colorSwitch === true ? "#ecb365" : "#3BD1BD")};
   }
 `;
