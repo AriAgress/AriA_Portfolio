@@ -9,7 +9,12 @@ const QuoteBox = () => {
   return (
     <DialogBox colorSwitch={colorSwitch}>
       <TextBox>
-        HOW'S IT GOING? I'M <font color="#F1AC52">ARI AGRESS.</font>
+        HOW'S IT GOING? I'M{" "}
+        <font
+          colorSwitch={colorSwitch}
+          style={{ color: colorSwitch ? "#ecb365" : "#B6EFA3" }}>
+          ARI AGRESS.
+        </font>
       </TextBox>
     </DialogBox>
   );

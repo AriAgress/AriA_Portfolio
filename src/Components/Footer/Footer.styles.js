@@ -4,7 +4,8 @@ export const FooterWrapper = styled.div`
   height: 275px;
 
   color: ${props => (props.colorSwitch === true ? "black" : "white")};
-  border-top: 5px solid #ecb365;
+  border-top: ${props =>
+    props.colorSwitch === true ? "5px solid #ecb365" : "5px solid #3BD1BD"};
 
   display: flex;
   justify-content: center;
