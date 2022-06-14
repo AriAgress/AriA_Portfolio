@@ -77,11 +77,11 @@ export const ProjectImgContainer = styled.div`
   @media (min-width: 769px) and (max-width: 1024px) {
   }
   @media (min-width: 481px) and (max-width: 768px) {
-    width: 75%;
+    width: 80%;
   }
   @media (min-width: 100px) and (max-width: 480px) {
-    height: 300px;
-    width: 75%;
+    height: 250px;
+    width: 80%;
   }
 `;
 
@@ -131,20 +131,20 @@ export const ProjectDescription = styled.div`
   @media (min-width: 769px) and (max-width: 1024px) {
   }
   @media (min-width: 481px) and (max-width: 768px) {
-    width: 75%;
+    width: 80%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    border-radius: 0px 0px 25px 25px;
+    min-height: 450px;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    width: 80%;
     margin-left: 0px;
     margin-right: 0px;
     padding: 0px;
     border-radius: 0px 0px 25px 25px;
     min-height: 350px;
-  }
-  @media (min-width: 100px) and (max-width: 480px) {
-    width: 75%;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0px;
-    border-radius: 0px 0px 25px 25px;
-    min-height: 300px;
   }
 `;
 

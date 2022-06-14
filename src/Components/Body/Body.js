@@ -51,9 +51,9 @@ const Body = () => {
               <QuoteBox />
               <DescriptionBox>
                 <DescriptionText data-aos="fade-left" data-aos-duration="1500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit.
+                  I'm a software engineer with a passion for building and
+                  designing applications for the web. Currently, I spend my time
+                  revamping websites for small businesses in my community.
                 </DescriptionText>
                 <div data-aos="fade-left" data-aos-duration="2500">
                   Lets chat at <b>ariagress@gmail.com</b>
