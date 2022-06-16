@@ -38,20 +38,20 @@ const About = () => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit.
+            Hello! My name is Ari Agress and I enjoy building websites and
+            applications. I have a very diverse background, coming from a degree
+            in Economics for UC Davis. My interest in web development came into
+            fruition when I used WIX to create a website for my personal
+            business. I remember looking at my partners and said, "I think learn
+            how to make it myself." From there i began my journey into web
+            development and I've never looked back.
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit.
+            Fast forward to today, I'm currently working as a Full Stack
+            Developer for Alphaworks. My specialty is creating/re-vamping
+            websites for small businesses in my community. My specialty
+            languages are HTML, CSS, JavaScript, and React. I'm also familiar
+            with Node.js, Express.js, MongoDB, and more.
           </p>
         </TextContainer>
       </AboutContainer>
