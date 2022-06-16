@@ -23,10 +23,13 @@ const Hobby = () => {
     <HobbyWrapper>
       <HobbyContainer>
         <h1>Hobby</h1>
-        <h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit.
-        </h4>
+        <div>
+          When the pandemic began, I had a lot of time on my hands, so I took up
+          photography as a new hobby to help pass time. Since then I've been
+          documenting life with my friends, family, and puppy. Below are some
+          photo's I've taken over the past year. Hope you enjoy them as much as
+          I do.
+        </div>
         <ImgContainer>
           {HobbyImages.map((image, index) => (
             <HobbyIMG
