@@ -12,6 +12,7 @@ import {
   NavWrapper,
   NavContainer,
   LogoContainer,
+  Img,
   NavLinksContainer,
   Links,
   I,
@@ -24,7 +25,9 @@ const Nav = () => {
     <NavWrapper colorSwitch={colorSwitch}>
       <NavContainer>
         <Link to="/" style={{ textDecoration: "none" }}>
-          <LogoContainer>Logo</LogoContainer>
+          <LogoContainer>
+            <Img />
+          </LogoContainer>
         </Link>
         <NavHamburger />
         <NavLinksContainer>

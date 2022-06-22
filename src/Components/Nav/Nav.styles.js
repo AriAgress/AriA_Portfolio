@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+//images
+// import AriLogoDark from "../../Assets/AriLogoDark.png";
+
+// import AriLogoLight from "../../Assets/AriLogoLight.png";
+
 export const NavWrapper = styled.div`
   height: 125px;
   color: ${props => (props.colorSwitch === true ? "black" : "white")};
@@ -41,6 +46,19 @@ export const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 100px;
+  width: 100px;
+`;
+
+export const Img = styled.div`
+  height: 100%;
+  width: 100%;
+  /* 
+  background-image:;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; */
 `;
 
 export const NavLinksContainer = styled.div`

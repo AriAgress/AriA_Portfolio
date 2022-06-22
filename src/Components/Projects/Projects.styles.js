@@ -77,6 +77,7 @@ export const ProjectImgContainer = styled.div`
   @media (min-width: 769px) and (max-width: 1024px) {
   }
   @media (min-width: 481px) and (max-width: 768px) {
+    height: 300px;
     width: 80%;
   }
   @media (min-width: 100px) and (max-width: 480px) {
