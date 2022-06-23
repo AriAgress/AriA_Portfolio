@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <FooterWrapper colorSwitch={colorSwitch}>
       <FooterContainer>
-        <Text>LETS CONNECT</Text>
+        <Text>LET'S CONNECT</Text>
         <Icons>
           <A href="mailto:ariagress@gmail.com" colorSwitch={colorSwitch}>
             <MdEmail />

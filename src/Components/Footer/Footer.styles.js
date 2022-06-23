@@ -40,6 +40,7 @@ export const Text = styled.div`
   font-size: 50px;
   margin-top: 35px;
   margin-bottom: 35px;
+  font-family: "Bebas Neue", cursive;
 `;
 export const Icons = styled.div`
   font-size: 40px;
@@ -57,5 +58,6 @@ export const A = styled.a`
 `;
 
 export const CopyWright = styled.div`
+  font-family: "Montserrat", sans-serif;
   font-size: 10px;
 `;
