@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { notInitialized } from "react-redux/es/utils/useSyncExternalStore.js";
 
 // stylesheet
 import { DialogBox, TextBox } from "./QuoteBox.styles.js";
@@ -13,8 +14,9 @@ const QuoteBox = () => {
         <font
           colorSwitch={colorSwitch}
           style={{ color: colorSwitch ? "#ecb365" : "#B6EFA3" }}>
-          ARI AGRESS.
+          ARI AGRESS
         </font>
+        .
       </TextBox>
     </DialogBox>
   );
