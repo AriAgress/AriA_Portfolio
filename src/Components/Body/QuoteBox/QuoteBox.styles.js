@@ -113,5 +113,7 @@ export const DialogBox = styled.div`
 
 export const TextBox = styled.div`
   padding: 30px;
-  font-size: 45px;
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
 `;

@@ -55,8 +55,8 @@ export const LogoContainer = styled.div`
   position: relative;
   padding: 1em;
   border-radius: 50%;
-  /* font-family: "Roboto", Arial, "Segoe UI", sans-serif; */
-  font-size: 18px;
+  font-family: "Fascinate", cursive;
+  font-size: 21px;
   font-weight: 500;
   color: ${props => (props.colorSwitch === true ? "black" : "white")};
   z-index: 2;
@@ -148,7 +148,8 @@ export const Links = styled.div`
     justify-content: center;
     position: absolute;
     inset: 0;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: "Bebas Neue", cursive;
     font-weight: bold;
     color: ${props => (props.colorSwitch === true ? "black" : "white")};
     letter-spacing: 4px;
@@ -169,10 +170,11 @@ export const Links = styled.div`
 
 export const I = styled.i`
   color: ${props => (props.colorSwitch === true ? "black" : "white")};
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: 4px;
   font-style: normal;
+  font-family: "Bebas Neue", cursive;
   transition: all 2s ease;
   transform: translateY(-20px);
   opacity: 0;
