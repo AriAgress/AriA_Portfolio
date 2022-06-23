@@ -25,9 +25,7 @@ const Nav = () => {
     <NavWrapper colorSwitch={colorSwitch}>
       <NavContainer>
         <Link to="/" style={{ textDecoration: "none" }}>
-          <LogoContainer>
-            <Img />
-          </LogoContainer>
+          <LogoContainer colorSwitch={colorSwitch}>AA</LogoContainer>
         </Link>
         <NavHamburger />
         <NavLinksContainer>
