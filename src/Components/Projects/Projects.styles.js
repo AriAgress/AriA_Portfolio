@@ -27,6 +27,7 @@ export const ProjectsWrapper = styled.div`
 export const IntroText = styled.div`
   width: 100%;
   max-width: 960px;
+  font-family: "Bebas Neue", cursive;
   color: ${props => (props.colorSwitch === true ? "black" : "white")};
   font-size: 30px;
   display: flex;
@@ -34,6 +35,20 @@ export const IntroText = styled.div`
   align-content: flex-start;
 
   margin-bottom: 25px;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    justify-content: center;
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    justify-content: center;
+  }
 `;
 
 export const ProjectsContainer = styled.div`
@@ -155,6 +170,14 @@ export const Content = styled.div`
   /* margin-left: 80px; */
   margin-left: ${props => (props.even ? "0px" : "80px")};
   margin-right: ${props => (props.even ? "80px" : "0px")};
+`;
+
+export const ProjectTitle = styled.h1`
+  font-family: "Bebas Neue", cursive;
+`;
+
+export const ProjectInfo = styled.p`
+  font-family: "Montserrat", sans-serif;
 `;
 
 export const LanguageContainer = styled.div`

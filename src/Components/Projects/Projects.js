@@ -18,6 +18,8 @@ import {
   ProjectImg,
   ProjectDescription,
   Content,
+  ProjectTitle,
+  ProjectInfo,
   LanguageContainer,
   LanguageIcon,
 } from "./Projects.styles.js";
@@ -60,8 +62,8 @@ const Projects = () => {
               even={p.projectID % 2 === 0 ? true : false}
               data-aos="fade-left">
               <Content>
-                <h1>{p.projectTitle}</h1>
-                <p>{p.description}</p>
+                <ProjectTitle>{p.projectTitle}</ProjectTitle>
+                <ProjectInfo>{p.description}</ProjectInfo>
                 <LanguageContainer>
                   <LanguageIcon>{p.language}</LanguageIcon>
                   <LanguageIcon>{p.language2}</LanguageIcon>
