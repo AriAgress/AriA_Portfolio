@@ -102,3 +102,11 @@ export const TextContainer = styled.div`
     padding-left: 0;
   }
 `;
+
+export const AboutMe = styled.h1`
+  font-family: "Bebas Neue", cursive;
+`;
+
+export const MyDescription = styled.p`
+  font-family: "Montserrat", sans-serif;
+`;

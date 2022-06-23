@@ -29,14 +29,22 @@ export const HobbyContainer = styled.div`
   }
   @media (min-width: 481px) and (max-width: 768px) {
     width: 90%;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
   }
   @media (min-width: 100px) and (max-width: 480px) {
     width: 90%;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
   }
+`;
+
+export const HobbyTitle = styled.h1`
+  font-family: "Bebas Neue", cursive;
+`;
+
+export const HobbyDescription = styled.p`
+  font-family: "Montserrat", sans-serif;
 `;
 
 export const ImgContainer = styled.div`

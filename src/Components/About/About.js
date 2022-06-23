@@ -13,6 +13,8 @@ import {
   ImgContainer,
   AboutImg,
   TextContainer,
+  AboutMe,
+  MyDescription,
 } from "./About.styles.js";
 
 const About = () => {
@@ -30,14 +32,14 @@ const About = () => {
           <AboutImg />
         </ImgContainer>
         <TextContainer>
-          <h1>
+          <AboutMe>
             About Me{" "}
             <FaRegHandPeace
               colorSwitch={colorSwitch}
               style={{ color: colorSwitch ? "#ecb365" : "#B6EFA3" }}
             />
-          </h1>
-          <p>
+          </AboutMe>
+          <MyDescription>
             Hello! My name is Ari Agress and I enjoy building websites and
             applications. I have a very diverse background, coming from a degree
             in Economics for UC Davis. My interest in web development came into
@@ -45,14 +47,14 @@ const About = () => {
             business. I remember looking at my partners and said, "I think learn
             how to make it myself." From there i began my journey into web
             development and I've never looked back.
-          </p>
-          <p>
+          </MyDescription>
+          <MyDescription>
             Fast forward to today, I'm currently working as a Full Stack
             Developer for Alphaworks. My specialty is creating/re-vamping
             websites for small businesses in my community. My specialty
             languages are HTML, CSS, JavaScript, and React. I'm also familiar
             with Node.js, Express.js, MongoDB, and more.
-          </p>
+          </MyDescription>
         </TextContainer>
       </AboutContainer>
       <Hobby />
