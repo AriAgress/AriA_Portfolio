@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 //images
 // import AriLogoDark from "../../Assets/AriLogoDark.png";
@@ -22,9 +22,10 @@ export const NavContainer = styled.div`
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  align-items: center;
 
-  margin-top: 6vh;
-  margin-bottom: 1vh;
+  margin-top: 50px;
+  margin-bottom: 10px;
 
   // media queries
   @media (min-width: 1201px) {
@@ -42,23 +43,66 @@ export const NavContainer = styled.div`
   }
 `;
 
+const rotate_hue = keyframes`
+   to { filter: hue-rotate(1turn);
+   }
+  `;
+
 export const LogoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  --border-radius: 50%;
+  --border-width: 4px;
+  /* appearance: none; */
+  position: relative;
+  padding: 1em;
+  border-radius: 50%;
+  /* font-family: "Roboto", Arial, "Segoe UI", sans-serif; */
+  font-size: 18px;
+  font-weight: 500;
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
+  z-index: 2;
 
-  height: 100px;
-  width: 100px;
-`;
+  &:after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(
+      #488cfb,
+      #29dbbc,
+      #ddf505,
+      #ff9f0e,
+      #e440bb,
+      #655adc,
+      #488cfb
+    );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: ${rotate_hue} linear 500ms infinite;
+    animation-play-state: paused;
+  }
+  &:hover:after {
+    animation-play-state: running;
+  }
 
-export const Img = styled.div`
-  height: 100%;
-  width: 100%;
-  /* 
-  background-image:;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; */
+  &: after {
+    box-sizing: border-box;
+  }
+
+  &:active {
+    --border-width: 5px;
+  }
 `;
 
 export const NavLinksContainer = styled.div`
