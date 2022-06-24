@@ -45,19 +45,21 @@ const NavHamburger = () => {
         )) || <RiMenuFill data-aos="flip-right" />}
       </HamburgerIcon>
       {toggleHamburgerMenu && (
-        <HamburgerMenu data-aos="fade-in">
+        <HamburgerMenu colorSwitch={colorSwitch}>
           <HamburgerContainer>
             <Link to="/" style={{ textDecoration: "none" }}>
               <Links
                 toggleHamburgerMenu={toggleHamburgerMenu}
-                onClick={() => dispatch(setMenu(false))}>
+                onClick={() => dispatch(setMenu(false))}
+                colorSwitch={colorSwitch}>
                 Home
               </Links>
             </Link>
             <Link to="/about" style={{ textDecoration: "none" }}>
               <Links
                 toggleHamburgerMenu={toggleHamburgerMenu}
-                onClick={() => dispatch(setMenu(false))}>
+                onClick={() => dispatch(setMenu(false))}
+                colorSwitch={colorSwitch}>
                 About
               </Links>
             </Link>

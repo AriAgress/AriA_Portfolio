@@ -35,10 +35,12 @@ export const AboutContainer = styled.div`
   @media (min-width: 481px) and (max-width: 768px) {
     display: flex;
     flex-flow: column;
+    padding-bottom: 25px;
   }
   @media (min-width: 100px) and (max-width: 480px) {
     display: flex;
     flex-flow: column;
+    padding-bottom: 25px;
   }
 `;
 
@@ -77,7 +79,6 @@ export const AboutImg = styled.div`
 
 export const TextContainer = styled.div`
   width: 50%;
-  height: 400px;
   padding-left: 60px;
 
   display: flex;

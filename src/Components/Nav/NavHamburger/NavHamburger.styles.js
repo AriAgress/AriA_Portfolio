@@ -38,7 +38,16 @@ export const HamburgerMenu = styled.div`
   position: absolute;
   width: 100%;
   height: 20vh;
-  background: #242222;
+  /* background: ${props =>
+    props.colorSwitch === true ? "white" : "black"}; */
+  background: ${props =>
+    props.colorSwitch === true
+      ? "linear-gradient(315deg, #f0f0f0, #cacaca)"
+      : "linear-gradient(145deg, #515ba5, #444d8b)"};
+  box-shadow: ${props =>
+    props.colorSwitch === true
+      ? "13px 13px 26px #d3d3d3, -13px -13px 26px #ededed"
+      : "13px 13px 26px #3d4779, -13px -13px 26px #455189;"};
   opacity: 1;
   z-index: 1;
   top: 125px;
@@ -51,9 +60,10 @@ export const HamburgerContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  color: white;
+  font-family: "Bebas Neue", cursive;
+  font-size: 21px;
 `;
 
 export const Links = styled.div`
-  color: white;
+  color: ${props => (props.colorSwitch === true ? "black" : "white")};
 `;
