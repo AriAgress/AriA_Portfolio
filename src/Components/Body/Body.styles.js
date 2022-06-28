@@ -5,7 +5,6 @@ import AriAvatar from "../../Assets/AriAvatar.png";
 
 export const BodyWrapper = styled.div`
   height: 85vh;
-  /* max-height: 800px; */
   font-family: "Montserrat", sans-serif;
 
   color: ${props => (props.colorSwitch === true ? "black" : "white")};

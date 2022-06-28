@@ -44,10 +44,6 @@ export const HamburgerMenu = styled.div`
     props.colorSwitch === true
       ? "linear-gradient(315deg, #f0f0f0, #cacaca)"
       : "linear-gradient(145deg, #515ba5, #444d8b)"};
-  box-shadow: ${props =>
-    props.colorSwitch === true
-      ? "13px 13px 26px #d3d3d3, -13px -13px 26px #ededed"
-      : "13px 13px 26px #3d4779, -13px -13px 26px #455189;"};
   opacity: 1;
   z-index: 1;
   top: 125px;

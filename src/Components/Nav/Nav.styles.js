@@ -1,10 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-//images
-// import AriLogoDark from "../../Assets/AriLogoDark.png";
-
-// import AriLogoLight from "../../Assets/AriLogoLight.png";
-
 export const NavWrapper = styled.div`
   height: 125px;
   color: ${props => (props.colorSwitch === true ? "black" : "white")};
@@ -24,7 +19,7 @@ export const NavContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 50px;
+  margin-top: 35px;
   margin-bottom: 10px;
 
   // media queries
@@ -51,7 +46,6 @@ const rotate_hue = keyframes`
 export const LogoContainer = styled.div`
   --border-radius: 50%;
   --border-width: 4px;
-  /* appearance: none; */
   position: relative;
   padding: 1em;
   border-radius: 50%;
