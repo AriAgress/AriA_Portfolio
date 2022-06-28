@@ -20,7 +20,9 @@ import {
 
 const Nav = () => {
   const colorSwitch = useSelector(state => state.colorSwitch);
-
+  const scrollProjects = () => {
+    window.scrollTo({ top: "1300", behavior: "smooth" });
+  };
   return (
     <NavWrapper colorSwitch={colorSwitch}>
       <NavContainer>
@@ -29,7 +31,10 @@ const Nav = () => {
         </Link>
         <NavHamburger />
         <NavLinksContainer>
-          <Link to="/#ToProject" style={{ textDecoration: "none" }}>
+          <Link
+            to="/#ToProject"
+            onClick={scrollProjects}
+            style={{ textDecoration: "none" }}>
             <Links colorSwitch={colorSwitch} alt="PROJECTS">
               <I colorSwitch={colorSwitch}>P</I>
               <I colorSwitch={colorSwitch}>R</I>
