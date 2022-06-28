@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setColor } from "../../../Actions/Index";
+import { setColor } from "../../../Actions/index";
 
 //stylesheet
 import {

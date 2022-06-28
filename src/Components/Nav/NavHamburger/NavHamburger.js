@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setMenu } from "../../../Actions/Index";
+import { setMenu } from "../../../Actions/index";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

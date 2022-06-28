@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setModal } from "../../../Actions/Index";
-import { setModalContent } from "../../../Actions/Index";
+import { setModal } from "../../../Actions/index";
+import { setModalContent } from "../../../Actions/index";
 import { HobbyImages } from "../../../Utils/HobbyIMGObjects";
+
 //components
 import PhotoModal from "./PhotoModal/PhotoModal";
 
