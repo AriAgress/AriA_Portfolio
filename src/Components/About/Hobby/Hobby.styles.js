@@ -26,6 +26,7 @@ export const HobbyContainer = styled.div`
   @media (min-width: 1025px) and (max-width: 1200px) {
   }
   @media (min-width: 769px) and (max-width: 1024px) {
+    width: 90%;
   }
   @media (min-width: 481px) and (max-width: 768px) {
     width: 90%;
@@ -88,6 +89,8 @@ export const HobbyIMG = styled.div`
   @media (min-width: 1025px) and (max-width: 1200px) {
   }
   @media (min-width: 769px) and (max-width: 1024px) {
+    height: 225px;
+    width: 225px;
   }
   @media (min-width: 481px) and (max-width: 768px) {
     height: 450px;

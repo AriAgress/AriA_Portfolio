@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 //Icons
-import { MdEmail, MdNoEncryption } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
 import {
   AiFillLinkedin,
   AiFillGithub,

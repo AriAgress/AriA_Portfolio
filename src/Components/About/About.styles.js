@@ -65,6 +65,7 @@ export const ImgContainer = styled.div`
   }
   @media (min-width: 100px) and (max-width: 480px) {
     width: 90%;
+    height: 350px;
   }
 `;
 export const AboutImg = styled.div`

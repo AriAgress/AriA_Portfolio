@@ -29,20 +29,17 @@ const float2 = keyframes`
 
 export const DialogBox = styled.div`
   transform: translateY(0px);
-  /* animation: float 5s ease-in-out infinite; */
   animation-name: ${float};
   animation-duration: 5s;
   animation-iteration-count: infinite;
-  /* mix-blend-mode: multiply; */
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
-  /* font-size: 15px; */
   background-color: ${props =>
     props.colorSwitch === true ? "#84b4ca" : "#064663"};
   color: ${props => (props.colorSwitch === true ? "black" : "white")};
-  /* padding: 50px; */
+  padding: 25px;
   border-radius: 25px;
   position: relative;
   box-shadow: 15px 15px
@@ -50,8 +47,6 @@ export const DialogBox = styled.div`
   height: 30%;
   width: 100%;
   margin-right: 30px;
-  /* font-family: "Baloo 2", cursive; */
-  // border: 1px solid $color-green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,6 +92,7 @@ export const DialogBox = styled.div`
     height: 60%;
     width: 80%;
     margin-bottom: 30px;
+    padding: 15px;
     &:after {
       content: none;
     }
@@ -105,6 +101,7 @@ export const DialogBox = styled.div`
     height: 60%;
     width: 80%;
     margin-bottom: 30px;
+    padding: 10px;
     &:after {
       content: none;
     }
@@ -116,4 +113,17 @@ export const TextBox = styled.div`
   font-size: 60px;
   font-family: "Bebas Neue", cursive;
   font-weight: 400;
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    font-size: 40px;
+  }
 `;
