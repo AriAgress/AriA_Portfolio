@@ -139,7 +139,6 @@ export const DescriptionBox = styled.div`
 
   display: flex;
   flex-flow: column;
-  /* justify-content: space-evenly; */
 
   margin-left: 30px;
 `;
