@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setModal } from "../../../../Actions/Index";
+import { setModal } from "../../../../Actions/index";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import { projects } from "../../Utils/ProjectObjects";
 import { useSelector, useDispatch } from "react-redux";
-import { setModal } from "../../Actions/Index";
-import { setModalContent } from "../../Actions/Index";
+import { setModal } from "../../Actions/index";
+import { setModalContent } from "../../Actions/index";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

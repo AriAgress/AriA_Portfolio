@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setMenu } from "../../Actions/Index";
+import { setMenu } from "../../Actions/index";
 import { FaRegHandPeace } from "react-icons/fa";
 
 // components
