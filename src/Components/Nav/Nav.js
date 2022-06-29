@@ -19,24 +19,15 @@ import {
 
 const Nav = () => {
   const colorSwitch = useSelector(state => state.colorSwitch);
+
   const scrollProjects = () => {
     const timer = setTimeout(() => {
-      // window.scrollTo({ top: "1300", behavior: "smooth" });
       const projects = document.getElementById("ToProject");
       projects.scrollIntoView({ behavior: "smooth" });
       console.log("projects", projects);
       clearTimeout(timer);
     }, 1);
   };
-
-  const location = useLocation();
-
-  useEffect(() => {
-    (() => {
-      // useLocation.pathname === "/ToProject" && scrollProjects();
-    })();
-    console.log(location);
-  }, [location]);
 
   return (
     <NavWrapper colorSwitch={colorSwitch}>
