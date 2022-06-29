@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 //components
@@ -12,7 +12,6 @@ import {
   NavWrapper,
   NavContainer,
   LogoContainer,
-  Img,
   NavLinksContainer,
   Links,
   I,
@@ -21,8 +20,24 @@ import {
 const Nav = () => {
   const colorSwitch = useSelector(state => state.colorSwitch);
   const scrollProjects = () => {
-    window.scrollTo({ top: "1300", behavior: "smooth" });
+    const timer = setTimeout(() => {
+      // window.scrollTo({ top: "1300", behavior: "smooth" });
+      const projects = document.getElementById("ToProject");
+      projects.scrollIntoView({ behavior: "smooth" });
+      console.log("projects", projects);
+      clearTimeout(timer);
+    }, 1);
   };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    (() => {
+      // useLocation.pathname === "/ToProject" && scrollProjects();
+    })();
+    console.log(location);
+  }, [location]);
+
   return (
     <NavWrapper colorSwitch={colorSwitch}>
       <NavContainer>
@@ -32,7 +47,7 @@ const Nav = () => {
         <NavHamburger />
         <NavLinksContainer>
           <Link
-            to="/#ToProject"
+            to="/ToProject"
             onClick={scrollProjects}
             style={{ textDecoration: "none" }}>
             <Links colorSwitch={colorSwitch} alt="PROJECTS">

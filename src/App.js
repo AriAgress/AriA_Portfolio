@@ -21,7 +21,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Body />} />
-        <Route path="/#ToProject" element={<Body />} />
+        <Route path="/ToProject" element={<Body />} />
         <Route path="/About" element={<About />} />
       </Routes>
       <Footer />
