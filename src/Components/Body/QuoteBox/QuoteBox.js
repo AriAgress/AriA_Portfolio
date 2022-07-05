@@ -13,7 +13,7 @@ const QuoteBox = () => {
         <font
           colorSwitch={colorSwitch}
           style={{ color: colorSwitch ? "#ecb365" : "#B6EFA3" }}>
-          ARI AGRESSSS
+          ARI AGRESS
         </font>
         .
       </TextBox>
