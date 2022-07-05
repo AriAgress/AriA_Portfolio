@@ -170,15 +170,10 @@ export const DescriptionText = styled.div`
 `;
 
 export const Anchor = styled.a`
-  &:active {
-    text-decoration: none;
-    color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
-  }
-  &:focus {
-    text-decoration: none;
-    color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
-  }
-  &:visited {
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
+  &:visited,
+  :active,
+  :focus {
     text-decoration: none;
     color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
   }
