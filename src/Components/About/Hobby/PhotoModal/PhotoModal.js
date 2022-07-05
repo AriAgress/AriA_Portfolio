@@ -16,8 +16,8 @@ import {
 // import { AiOutlineClose } from "react-icons/ai";
 
 const PhotoModal = () => {
-  const toggleModal = useSelector(state => state.toggleModal);
-  const modalContent = useSelector(state => state.modalContent);
+  const toggleModal = useSelector((state) => state.toggleModal);
+  const modalContent = useSelector((state) => state.modalContent);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -27,13 +27,13 @@ const PhotoModal = () => {
   }, []);
 
   const keyPress = useCallback(
-    e => {
+    (e) => {
       if (e.key === "Escape" && toggleModal) {
         dispatch(setModal(false));
         console.log("I pressed");
       }
     },
-    [setModal, toggleModal]
+    [dispatch, toggleModal]
   );
 
   useEffect(() => {
