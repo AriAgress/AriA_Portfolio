@@ -7,7 +7,7 @@ export const BodyWrapper = styled.div`
   height: 85vh;
   font-family: "Montserrat", sans-serif;
 
-  color: ${props => (props.colorSwitch === true ? "black" : "white")};
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
 
   display: flex;
   justify-content: center;
@@ -172,9 +172,9 @@ export const DescriptionText = styled.div`
 export const Anchor = styled.a`
   &:visited {
     text-decoration: none;
-    color: ${props => (props.colorSwitch === true ? "black" : "white")};
+    color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
   }
   &:hover {
-    color: ${props => (props.colorSwitch === true ? "#ecb365" : "#3BD1BD")};
+    color: ${(props) => (props.colorSwitch === true ? "#ecb365" : "#3BD1BD")};
   }
 `;
