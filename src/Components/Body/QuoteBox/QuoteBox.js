@@ -1,6 +1,5 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { notInitialized } from "react-redux/es/utils/useSyncExternalStore.js";
 
 // stylesheet
 import { DialogBox, TextBox } from "./QuoteBox.styles.js";
