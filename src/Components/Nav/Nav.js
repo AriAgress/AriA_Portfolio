@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 //components
@@ -18,7 +18,7 @@ import {
 } from "./Nav.styles.js";
 
 const Nav = () => {
-  const colorSwitch = useSelector(state => state.colorSwitch);
+  const colorSwitch = useSelector((state) => state.colorSwitch);
 
   const scrollProjects = () => {
     const timer = setTimeout(() => {
@@ -38,7 +38,7 @@ const Nav = () => {
         <NavHamburger />
         <NavLinksContainer>
           <Link
-            to="/ToProject"
+            to="/Project"
             onClick={scrollProjects}
             style={{ textDecoration: "none" }}>
             <Links colorSwitch={colorSwitch} alt="PROJECTS">
