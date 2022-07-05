@@ -2,8 +2,8 @@ import styled, { keyframes } from "styled-components";
 
 export const NavWrapper = styled.div`
   height: 125px;
-  color: ${props => (props.colorSwitch === true ? "black" : "white")};
-  border-bottom: ${props =>
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
+  border-bottom: ${(props) =>
     props.colorSwitch === true ? "5px solid #ecb365" : "5px solid #3BD1BD"};
 
   display: flex;
@@ -52,7 +52,7 @@ export const LogoContainer = styled.div`
   font-family: "Fascinate", cursive;
   font-size: 21px;
   font-weight: 500;
-  color: ${props => (props.colorSwitch === true ? "black" : "white")};
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
   z-index: 2;
 
   &:after {
@@ -145,7 +145,7 @@ export const Links = styled.div`
     font-size: 20px;
     font-family: "Bebas Neue", cursive;
     font-weight: bold;
-    color: ${props => (props.colorSwitch === true ? "black" : "white")};
+    color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
     letter-spacing: 4px;
     opacity: 1;
   }
@@ -163,7 +163,7 @@ export const Links = styled.div`
 `;
 
 export const I = styled.i`
-  color: ${props => (props.colorSwitch === true ? "black" : "white")};
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 4px;
