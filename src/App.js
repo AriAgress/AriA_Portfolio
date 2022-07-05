@@ -9,7 +9,7 @@ import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
-  const colorSwitch = useSelector(state => state.colorSwitch);
+  const colorSwitch = useSelector((state) => state.colorSwitch);
   return (
     <div
       className="App"
@@ -21,7 +21,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Body />} />
-        <Route path="/ToProject" element={<Body />} />
+        <Route path="/Project" element={<Body />} />
         <Route path="/About" element={<About />} />
       </Routes>
       <Footer />
