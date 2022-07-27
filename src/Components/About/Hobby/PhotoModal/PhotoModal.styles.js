@@ -10,6 +10,7 @@ export const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 `;
 
 export const ModalWrapper = styled.div`
@@ -22,7 +23,7 @@ export const ModalWrapper = styled.div`
 export const ModalIMG = styled.div`
   width: 100%;
   height: 100%;
-  background: url(${props => props.modalContent && props.modalContent});
+  background: url(${(props) => props.modalContent && props.modalContent});
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
