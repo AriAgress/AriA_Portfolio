@@ -180,7 +180,16 @@ export const ProjectInfo = styled.p`
   font-family: "Montserrat", sans-serif;
 `;
 
+export const A = styled.a`
+  margin-left: 15px;
+  &:visited {
+    color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
+    text-decoration: none;
+  }
+`;
+
 export const LanguageContainer = styled.div`
+  margin-top: 15px;
   display: flex;
   flex-flow: row;
 `;
