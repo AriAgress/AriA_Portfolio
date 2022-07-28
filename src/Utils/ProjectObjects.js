@@ -8,7 +8,8 @@ export const projects = [
     projectID: 1,
     projectImage: EastBayRecorders,
     projectTitle: "East Bay Records",
-    description: "lorem x3",
+    description:
+      "This project was a recreation of an olderwebsite for a small recording studio in Oakland. A group of us came together and updated the website using React and JavaScript.",
     language: [
       <div>
         <DiJavascript /> <DiHtml5 />
