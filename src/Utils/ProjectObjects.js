@@ -1,8 +1,8 @@
 import EastBayRecorders from "../Assets/EastBayRecorders.png";
 import YemenGrace from "../Assets/Yemen_Grace.png";
-import AnimeApp from "../Assets/Anime_App.png";
+import TFT from "../Assets/tfta_app.png";
 import { DiJavascript, DiReact, DiHtml5, DiCss3 } from "react-icons/di";
-import { FaCcStripe } from "react-icons/fa";
+import { FaCcStripe, FaNode } from "react-icons/fa";
 export const projects = [
   {
     projectID: 1,
@@ -25,7 +25,7 @@ export const projects = [
     projectImage: YemenGrace,
     projectTitle: "Yemen-Grace Coffee",
     description:
-      "This project was done for a local coffee shop in my home town. After the pandemic, they wanted to build a website to expand their business to online sales. Unfortunately, after the website was built, they sunset the idea when we reached out for photos to finalize the project.",
+      "This project was done for a local coffee shop in my home town. After the pandemic, they wanted to build a website to expand their business to online sales. Unfortunately, after the website was built, they sunset the idea when we reached out for photos to finalize the project. They lost interest in e-commerce.",
     language: [
       <div>
         <DiJavascript /> <DiHtml5 />
@@ -38,14 +38,14 @@ export const projects = [
   },
   {
     projectID: 3,
-    projectImage: AnimeApp,
+    projectImage: TFT,
     projectTitle: "Team Fight Tactics API",
     description:
       "This was a fun project I threw together to extract information on my gameplay. I wanted to compile data on my previous game play to see if I was progressing or not. The best part of this app was my friends were able to use it as well!",
     language: [
       <div>
         <DiJavascript /> <DiHtml5 />
-        <DiCss3 /> <DiReact />
+        <DiCss3 /> <DiReact /> <FaNode />
       </div>,
     ],
     link: "https://github.com/AriAgress/tfta",
