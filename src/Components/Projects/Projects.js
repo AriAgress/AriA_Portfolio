@@ -3,6 +3,7 @@ import { projects } from "../../Utils/ProjectObjects";
 import { useSelector, useDispatch } from "react-redux";
 import { setModal } from "../../Actions/index";
 import { setModalContent } from "../../Actions/index";
+import { AiFillGithub } from "react-icons/ai";
 
 //components
 import PhotoModal from "../../Components/About/Hobby/PhotoModal/PhotoModal";
@@ -18,6 +19,7 @@ import {
   Content,
   ProjectTitle,
   ProjectInfo,
+  A,
   LanguageContainer,
   LanguageIcon,
 } from "./Projects.styles.js";
@@ -53,7 +55,12 @@ const Projects = () => {
               colorSwitch={colorSwitch}
               even={p.projectID % 2 === 0 ? true : false}>
               <Content>
-                <ProjectTitle>{p.projectTitle}</ProjectTitle>
+                <ProjectTitle>
+                  {p.projectTitle}{" "}
+                  <A colorSwitch={colorSwitch} href={p.link}>
+                    <AiFillGithub />
+                  </A>
+                </ProjectTitle>
                 <ProjectInfo>{p.description}</ProjectInfo>
                 <LanguageContainer>
                   <LanguageIcon>{p.language}</LanguageIcon>

@@ -16,7 +16,7 @@ export const projects = [
         <DiCss3 /> <DiReact />
       </div>,
     ],
-    link: "",
+    link: "https://github.com/andrewjspivey/eastbay_recorders",
     color: "#EF9DA2",
     color2: "#04293A",
   },
