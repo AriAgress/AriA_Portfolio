@@ -29,6 +29,7 @@ const Projects = () => {
   const toggleModal = useSelector((state) => state.toggleModal);
   const modalContent = useSelector((state) => state.modalContent);
   const dispatch = useDispatch();
+
   return (
     <>
       <ProjectsWrapper id="ToProject">

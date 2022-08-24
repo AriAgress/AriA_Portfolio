@@ -132,9 +132,6 @@ export const ProjectDescription = styled.div`
   justify-content: center;
   padding: 20px;
   border-radius: 25px;
-  /* color: white; */
-  /* margin-left: -60px; */
-  /* margin-right: -60px; */
   margin-left: ${(props) => (props.even ? "0px" : "-60px")};
   margin-right: ${(props) => (props.even ? "-60px" : "0px")};
   margin-bottom: 100px;
@@ -167,9 +164,24 @@ export const ProjectDescription = styled.div`
 export const Content = styled.div`
   width: 100%;
   height: 100%;
-  /* margin-left: 80px; */
   margin-left: ${(props) => (props.even ? "0px" : "80px")};
   margin-right: ${(props) => (props.even ? "80px" : "80px")};
+
+  // media queries
+  @media (min-width: 1201px) {
+  }
+  @media (min-width: 1025px) and (max-width: 1200px) {
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+  }
+  @media (min-width: 481px) and (max-width: 768px) {
+    margin-left: ${(props) => (props.even ? "0px" : "30px")};
+    margin-right: ${(props) => (props.even ? "30px" : "30px")};
+  }
+  @media (min-width: 100px) and (max-width: 480px) {
+    margin-left: ${(props) => (props.even ? "0px" : "20px")};
+    margin-right: ${(props) => (props.even ? "20px" : "20px")};
+  }
 `;
 
 export const ProjectTitle = styled.h1`
