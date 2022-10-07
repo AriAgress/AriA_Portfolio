@@ -15,6 +15,8 @@ import {
   NavLinksContainer,
   Links,
   I,
+  ResumeButton,
+  ResumeA,
 } from "./Nav.styles.js";
 
 const Nav = () => {
@@ -61,6 +63,12 @@ const Nav = () => {
               <I colorSwitch={colorSwitch}>T</I>
             </Links>
           </Link>
+          <ResumeA
+            href="https://drive.google.com/file/d/1D3JK6j9uwCr3YgAoVHW9uQJ35xKivI_5/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer">
+            <ResumeButton colorSwitch={colorSwitch}>Resume</ResumeButton>
+          </ResumeA>
           <ToggleSwitch colorSwitch={colorSwitch} />
         </NavLinksContainer>
       </NavContainer>

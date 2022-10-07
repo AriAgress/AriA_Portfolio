@@ -203,3 +203,48 @@ export const I = styled.i`
     }
   }
 `;
+
+export const ResumeA = styled.a`
+  text-decoration: none;
+`;
+
+export const ResumeButton = styled.button`
+  padding: 0.8em 1.8em;
+  margin-right: 10px;
+  border: 2px solid #3bd1bd;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: bold;
+  color: #17c3b2;
+
+  &:before {
+    content: "";
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #3bd1bd;
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+  }
+
+  &:hover:before {
+    width: 105%;
+  }
+
+  &:hover {
+    color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
+    cursor: pointer;
+  }
+`;

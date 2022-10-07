@@ -20,13 +20,14 @@ import {
   HamburgerMenu,
   HamburgerContainer,
   Links,
+  ResumeA,
 } from "./NavHamburger.styles.js";
 
 const NavHamburger = () => {
-  const toggleHamburgerMenu = useSelector(state => state.toggleHamburgerMenu);
+  const toggleHamburgerMenu = useSelector((state) => state.toggleHamburgerMenu);
   const dispatch = useDispatch();
 
-  const colorSwitch = useSelector(state => state.colorSwitch);
+  const colorSwitch = useSelector((state) => state.colorSwitch);
 
   useEffect(() => {
     Aos.init({
@@ -63,6 +64,15 @@ const NavHamburger = () => {
                 About
               </Links>
             </Link>
+            <Links>
+              <ResumeA
+                href="https://drive.google.com/file/d/1D3JK6j9uwCr3YgAoVHW9uQJ35xKivI_5/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+                colorSwitch={colorSwitch}>
+                Resume
+              </ResumeA>
+            </Links>
           </HamburgerContainer>
         </HamburgerMenu>
       )}
