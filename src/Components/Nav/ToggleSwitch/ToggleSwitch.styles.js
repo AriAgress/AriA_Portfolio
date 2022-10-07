@@ -10,7 +10,7 @@ export const SwitchContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* background-color: ${props =>
+  /* background-color: ${(props) =>
     props.colorSwitch === true ? "#AEAEAE" : "#AEAEAE"}; */
   background-color: #aeaeae;
   width: 40px;
@@ -22,13 +22,14 @@ export const SwitchContainer = styled.div`
 `;
 
 export const Switch = styled.div`
-  background: ${props => (props.colorSwitch === true ? "#ecb365" : "#3BD1BD")};
+  background: ${(props) =>
+    props.colorSwitch === true ? "#ecb365" : "#3BD1BD"};
   border-radius: 50%;
   width: 23px;
   height: 23px;
   cursor: pointer;
 
-  margin-left: ${props => (props.colorSwitch === true ? "0px" : "17px")};
+  margin-left: ${(props) => (props.colorSwitch === true ? "0px" : "17px")};
 
   transition-property: margin;
   transition-duration: 0.4s;

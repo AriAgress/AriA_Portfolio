@@ -194,6 +194,7 @@ export const ProjectInfo = styled.p`
 
 export const A = styled.a`
   margin-left: 15px;
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
   &:visited {
     color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
     text-decoration: none;

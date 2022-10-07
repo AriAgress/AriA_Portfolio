@@ -25,7 +25,7 @@ export const HamburgerIcon = styled.div`
   align-items: center;
   margin-right: 20px;
   opacity: 0.7;
-  color: ${props => (props.colorSwitch === true ? "black" : "white")};
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
   font-size: 24px;
 
   &:hover {
@@ -38,9 +38,9 @@ export const HamburgerMenu = styled.div`
   position: absolute;
   width: 100%;
   height: 20vh;
-  /* background: ${props =>
+  /* background: ${(props) =>
     props.colorSwitch === true ? "white" : "black"}; */
-  background: ${props =>
+  background: ${(props) =>
     props.colorSwitch === true
       ? "linear-gradient(315deg, #f0f0f0, #cacaca)"
       : "linear-gradient(145deg, #515ba5, #444d8b)"};
@@ -61,5 +61,10 @@ export const HamburgerContainer = styled.div`
 `;
 
 export const Links = styled.div`
-  color: ${props => (props.colorSwitch === true ? "black" : "white")};
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
+`;
+
+export const ResumeA = styled.a`
+  text-decoration: none;
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
 `;
