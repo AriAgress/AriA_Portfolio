@@ -152,7 +152,8 @@ export const ProjectButton = styled.div`
 `;
 
 export const DescriptionText = styled.div`
-  padding-bottom: 100px;
+  padding-top: 25px;
+  padding-bottom: 75px;
 
   // media queries
   @media (min-width: 1201px) {
