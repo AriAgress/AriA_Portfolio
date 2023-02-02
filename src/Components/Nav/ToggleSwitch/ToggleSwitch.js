@@ -10,7 +10,7 @@ import {
 } from "./ToggleSwitch.styles.js";
 
 const ToggleSwitch = () => {
-  const colorSwitch = useSelector(state => state.colorSwitch);
+  const colorSwitch = useSelector((state) => state.colorSwitch);
   const dispatch = useDispatch();
   return (
     <SwitchWrapper>
