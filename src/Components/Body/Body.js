@@ -26,10 +26,10 @@ import {
 } from "./Body.styles.js";
 
 const Body = () => {
-  const toggleHamburgerMenu = useSelector(state => state.toggleHamburgerMenu);
+  const toggleHamburgerMenu = useSelector((state) => state.toggleHamburgerMenu);
   const dispatch = useDispatch();
 
-  const colorSwitch = useSelector(state => state.colorSwitch);
+  const colorSwitch = useSelector((state) => state.colorSwitch);
 
   useEffect(() => {
     Aos.init({
@@ -51,9 +51,11 @@ const Body = () => {
               <QuoteBox />
               <DescriptionBox>
                 <DescriptionText data-aos="fade-left" data-aos-duration="1500">
-                  I'm a software engineer with a passion for building and
-                  designing applications for the web. Currently, I spend my time
-                  revamping websites for small businesses in my community.
+                  A software engineer with a passion for building and designing
+                  applications for the web. Currently, I am a React developer
+                  for Alphaworks. My job mainly consists of developing websites
+                  from start to finish, converting existing sites to Rreact/Java
+                  Script, or data manipulation.
                 </DescriptionText>
                 <div data-aos="fade-left" data-aos-duration="2500">
                   Lets chat at <b>ariagress@gmail.com</b>

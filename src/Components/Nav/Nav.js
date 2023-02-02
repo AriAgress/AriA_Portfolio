@@ -64,7 +64,7 @@ const Nav = () => {
             </Links>
           </Link>
           <ResumeA
-            href="https://drive.google.com/file/d/1D3JK6j9uwCr3YgAoVHW9uQJ35xKivI_5/view?usp=sharing"
+            href="https://docs.google.com/document/d/1uc5qf7daoWxAea6zgmLAWlZjt77-MxoTv8FE5sVweBA/edit?usp=sharing"
             target="_blank"
             rel="noreferrer">
             <ResumeButton colorSwitch={colorSwitch}>Resume</ResumeButton>
