@@ -82,6 +82,10 @@ export const ProjectImg = styled.img`
   width: 100%;
   border-radius: 25px;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   // media queries
   @media (min-width: 481px) and (max-width: 768px) {
     margin-top: 25px;
