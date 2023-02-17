@@ -11,17 +11,6 @@ export const BodyWrapper = styled.div`
 
   display: flex;
   justify-content: center;
-  // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
-  @media (min-width: 481px) and (max-width: 768px) {
-  }
-  @media (min-width: 100px) and (max-width: 480px) {
-  }
 `;
 
 export const BodyContainer = styled.div`
@@ -34,10 +23,6 @@ export const BodyContainer = styled.div`
 
   margin-top: 100px;
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
   @media (min-width: 769px) and (max-width: 1024px) {
     width: 95%;
   }
@@ -59,12 +44,6 @@ export const IntroContainer = styled.div`
   justify-content: space-between;
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     flex-flow: column-reverse;
     align-items: center;
@@ -80,12 +59,6 @@ export const IntroContainer = styled.div`
 export const ImgContainer = styled.div`
   width: 50%;
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     height: 70%;
     width: 70%;
@@ -118,12 +91,6 @@ export const TextContainer = styled.div`
   margin-left: 60px;
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     width: 90%;
     margin-left: 0;
@@ -156,12 +123,6 @@ export const DescriptionText = styled.div`
   padding-bottom: 75px;
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     padding-bottom: 30px;
   }
