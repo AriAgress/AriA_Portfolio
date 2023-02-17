@@ -8,10 +8,6 @@ export const ProjectsWrapper = styled.div`
 
   padding-top: 50px;
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
   @media (min-width: 769px) and (max-width: 1024px) {
     margin-left: 20px;
     margin-right: 20px;
@@ -19,8 +15,6 @@ export const ProjectsWrapper = styled.div`
   @media (min-width: 481px) and (max-width: 768px) {
     margin-left: 20px;
     margin-right: 20px;
-  }
-  @media (min-width: 100px) and (max-width: 480px) {
   }
 `;
 
@@ -37,12 +31,6 @@ export const IntroText = styled.div`
   margin-bottom: 25px;
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     justify-content: center;
   }
@@ -63,12 +51,6 @@ export const ProjectsContainer = styled.div`
   margin-bottom: 100px;
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     flex-flow: column;
     margin-bottom: 50px;
@@ -85,12 +67,6 @@ export const ProjectImgContainer = styled.div`
   z-index: 1;
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     height: 300px;
     width: 80%;
@@ -107,12 +83,6 @@ export const ProjectImg = styled.img`
   border-radius: 25px;
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     margin-top: 25px;
   }
@@ -137,12 +107,6 @@ export const ProjectDescription = styled.div`
   margin-bottom: 100px;
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     width: 80%;
     margin-left: 0px;
@@ -168,12 +132,6 @@ export const Content = styled.div`
   margin-right: ${(props) => (props.even ? "80px" : "80px")};
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     margin-left: ${(props) => (props.even ? "0px" : "30px")};
     margin-right: ${(props) => (props.even ? "30px" : "30px")};

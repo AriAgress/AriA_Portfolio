@@ -10,8 +10,6 @@ export const SwitchContainer = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* background-color: ${(props) =>
-    props.colorSwitch === true ? "#AEAEAE" : "#AEAEAE"}; */
   background-color: #aeaeae;
   width: 40px;
   height: 15px;

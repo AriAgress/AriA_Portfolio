@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const FooterWrapper = styled.div`
   height: 275px;
 
-  color: ${props => (props.colorSwitch === true ? "black" : "white")};
-  border-top: ${props =>
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
+  border-top: ${(props) =>
     props.colorSwitch === true ? "5px solid #ecb365" : "5px solid #3BD1BD"};
 
   display: flex;
@@ -22,10 +22,6 @@ export const FooterContainer = styled.div`
   margin-bottom: 10px;
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
   @media (min-width: 769px) and (max-width: 1024px) {
     width: 95%;
   }
@@ -50,9 +46,9 @@ export const Icons = styled.div`
 `;
 
 export const A = styled.a`
-  color: ${props => (props.colorSwitch === true ? "black" : "white")};
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
   &:visited {
-    color: ${props => (props.colorSwitch === true ? "black" : "white")};
+    color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
     text-decoration: none;
   }
 `;

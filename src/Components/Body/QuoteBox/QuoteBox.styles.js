@@ -36,14 +36,14 @@ export const DialogBox = styled.div`
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
-  background-color: ${props =>
+  background-color: ${(props) =>
     props.colorSwitch === true ? "#84b4ca" : "#064663"};
-  color: ${props => (props.colorSwitch === true ? "black" : "white")};
+  color: ${(props) => (props.colorSwitch === true ? "black" : "white")};
   padding: 25px;
   border-radius: 25px;
   position: relative;
   box-shadow: 15px 15px
-    ${props => (props.colorSwitch === true ? "#064663" : "#84b4ca")};
+    ${(props) => (props.colorSwitch === true ? "#064663" : "#84b4ca")};
   height: 30%;
   width: 100%;
   margin-right: 30px;
@@ -59,35 +59,29 @@ export const DialogBox = styled.div`
     content: ".";
     font-weight: bold;
     /* -webkit-text-stroke: 0.5px green; */
-    -webkit-text-fill-color: ${props =>
+    -webkit-text-fill-color: ${(props) =>
       props.colorSwitch === true ? "#064663" : "#84b4ca"};
     /* border: 1px solid green; */
     text-shadow: 15px 15px
-      ${props => (props.colorSwitch === true ? "#064663" : "#84b4ca")};
+      ${(props) => (props.colorSwitch === true ? "#064663" : "#84b4ca")};
     text-align: left;
     font-size: 55px;
     width: 55px;
     height: 11px;
     line-height: 30px;
     border-radius: 11px;
-    background-color: ${props =>
+    background-color: ${(props) =>
       props.colorSwitch === true ? "#84b4ca" : "#064663"};
     position: absolute;
     display: block;
     bottom: -30px;
     left: 0;
     box-shadow: 15px 15px
-      ${props => (props.colorSwitch === true ? "#064663" : "#84b4ca")};
+      ${(props) => (props.colorSwitch === true ? "#064663" : "#84b4ca")};
     z-index: -2;
   }
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
   @media (min-width: 481px) and (max-width: 768px) {
     height: 60%;
     width: 80%;
@@ -115,14 +109,6 @@ export const TextBox = styled.div`
   font-weight: 400;
 
   // media queries
-  @media (min-width: 1201px) {
-  }
-  @media (min-width: 1025px) and (max-width: 1200px) {
-  }
-  @media (min-width: 769px) and (max-width: 1024px) {
-  }
-  @media (min-width: 481px) and (max-width: 768px) {
-  }
   @media (min-width: 100px) and (max-width: 480px) {
     font-size: 40px;
   }
